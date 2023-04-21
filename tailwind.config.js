@@ -1,0 +1,49 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    //Aqui se configuran los colores las fuentes, y los screens y resoluciones
+    screens: {
+      first: "240px",
+      // => @media (min-width: 240px) { ... }
+      miniMobile: "280px",
+      // => @media (min-width: 280px) { ... }
+      mobile: "320px",
+      // => @media (min-width: 320px) { ... }
+      midMobile: "400px",
+      // => @media (min-width: 400px) { ... }
+      miniTablet: "520px",
+      // => @media (min-width: 640px) { ... }
+      tablet: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
+    colors: {
+      violet: "#9BA4ED",
+      gray20: "#3E3C3C",
+      gray50: "#01000c",
+      white: "#fff",
+      gray60: "rgba(42, 22, 156, 0.9)",
+      azulDark: "rgba(42, 22, 156)",
+      azulOscuro: "rgba(21, 17, 41)",
+      gray: "#242427",
+      grayOscuro: "#101011",
+      morado: "#2A2F4F",
+      morado2: "#2a2f4fe3",
+    },
+    extend: {
+      fontFamily: {
+        Lato: ["Lato", "sans-serif"],
+      },
+      gridTemplateColumns: {
+        two: "auto auto",
+      },
+    },
+  },
+  plugins: [],
+};
