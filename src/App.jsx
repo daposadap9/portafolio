@@ -198,7 +198,7 @@ function App() {
       midTablet:bg-circle-gradient
       laptop:justify-center
       ">
-        <section className="desktop:w-3/5 midDesktop:w-2/4">
+        <section className="desktop:w-3/5 midDesktop:w-5/12">
         <div className="bg-morado rounded-2xl text-white overflow-hidden
         midTablet:bg-azulOscuro
         midTablet:translate-x-[-30px]
