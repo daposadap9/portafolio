@@ -16,7 +16,7 @@ export default {
       // => @media (min-width: 640px) { ... }
       tablet: "640px",
       // => @media (min-width: 640px) { ... }
-      midTablet:"726px",
+      midTablet:"734px",
       // => @media (min-width: 710px) { ... }
       laptop: "1010px",
       // => @media (min-width: 1024px) { ... }
@@ -36,6 +36,7 @@ export default {
       grayOscuro: "#101011",
       morado: "#2A2F4F",
       morado2: "#2a2f4fe3",
+      transparent: "rgba(255, 255, 255, 0)"
     },
     extend: {
       fontFamily: {
@@ -46,7 +47,8 @@ export default {
       },
       backgroundImage: {
         'circle-gradient': 'radial-gradient(ellipse at center bottom, rgba(42,47,79,1) 44%, rgba(1,0,12,1) 100%)',
-      }
+        'circle-gradient2': 'radial-gradient(ellipse at center bottom, rgba(21, 17, 41) 44%, rgba(1,0,12,1) 100%)'
+      },
     },
   },
   plugins: [],

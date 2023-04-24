@@ -6,3 +6,7 @@
   background: rgb(42,47,79);
   background: radial-gradient(ellipse at center bottom, rgba(42,47,79,1) 44%, rgba(1,0,12,1) 100%)
 }
+.transparente{
+  background: rgba(255, 255, 255, 0)
+}
+

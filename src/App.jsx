@@ -87,13 +87,14 @@ function App() {
           </b>
         </div>
       </section>
-      {/* <section id="" className="absolute top-9 first:left-28">
-        <img src="/images/ellipse/Ellipse-4.png" />
+        {/* <section id="" className="fixed top-9 first:left-28">
+        <img src="/images/ellipse/Ellipse-4.png " />
         <img
           className="absolute top-2/4 right-1/3"
           src="/images/ellipse/Ellipse-1.png"
         />
       </section> */}
+      
       <section
         ref={containerAnimation}
         id="animation"
@@ -125,7 +126,7 @@ function App() {
       miniTablet:p-9 miniTablet:w-8/12
       tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
       " id="Cards" >
-        <div className="text-white mt-3 bg-gray 
+        <div className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -137,7 +138,7 @@ function App() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div className="text-white mt-6 bg-gray 
+        <div className="text-white mt-6 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -147,7 +148,7 @@ function App() {
           <p className="text-center mt-2">View all your surrounding with 360
           </p>
         </div>
-        <div className="text-white mt-6 bg-gray 
+        <div className="text-white mt-6 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -157,7 +158,7 @@ function App() {
           <p className="text-center mt-2">Incredible gaming experience
           </p>
         </div>
-        <div className="text-white mt-6 bg-gray 
+        <div className="text-white mt-6 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -199,42 +200,42 @@ function App() {
       laptop:justify-center
       ">
         <section className="desktop:w-3/5 midDesktop:w-5/12">
-        <div className="bg-morado rounded-2xl text-white overflow-hidden
-        midTablet:bg-azulOscuro
+        <div className="rounded-2xl bg-circle-gradient text-white overflow-hidden
+        midTablet:bg-circle-gradient2
         midTablet:translate-x-[-30px]
         midTablet:z-[-10]
         midTablet:w-full"
         >
-          <b><h1 className="text-center pt-6">Contact me</h1></b>
+          <b><h1 className="text-center pt-6 text-violet text-2xl mb-4 overflow-hidden">Contact me</h1></b>
           <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black items-center
           midTablet:flex-row
           midTablet:flex-wrap
           midTablet:justify-around
-          midTablet:m-2
+          midTablet:m-3
           ">
             <div className="flex flex-col relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14
-              midTablet:bg-azulOscuro" placeholder="Write your name here" type="text" />
+              <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" 
+              placeholder="Write your name here" type="text" />
               <span className="absolute left-0 px-0 py-1 duration-0.3">First name</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14
-              midTablet:bg-azulOscuro" type="text" placeholder="Write your last name here" />
+              <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text" 
+              placeholder="Write your last name here" />
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Last name</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14
-              midTablet:bg-azulOscuro" type="text" placeholder="Write your email here" />
+              <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text" 
+              placeholder="Write your email here" />
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Email address</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14
-              midTablet:bg-azulOscuro" type="text" placeholder="Cellphone number" />
+              <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text" 
+              placeholder="Cellphone number" />
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Cellphone number</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <textarea className="outline-none border-b mt-8 bg-morado
-              midTablet:bg-azulOscuro" placeholder="Write your message here..."></textarea>
+              <textarea className="outline-none border-b mt-8 bg-transparent focus:text-violet" 
+              placeholder="Write your message here..."></textarea>
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Message</span>
             </div>
             
@@ -246,7 +247,7 @@ function App() {
       </section>
       <section className="colorear text-white mt-10 mx-2 rounded-2xl p-5 
       tablet:h-2/4 z-10">
-        <h1 className="text-center">Contact information</h1>
+        <b><h1 className="text-center text-violet text-2xl overflow-hidden">Contact information</h1></b>
         <ul className="list-none mt-5 mb-10 text-sm overflow-hidden">
           <li className="flex flex-wrap mt-5"><span className="mr-4"><FontAwesomeIcon icon={faLocationDot} /></span><h1>Calle 35 #54-22, Bello obrero</h1></li>
           <li className="flex flex-wrap mt-5" ><span className="mr-4"><FontAwesomeIcon className='ul__icon' icon={faEnvelope} /></span><h1>diegoposada1999@gmail.com</h1></li>
