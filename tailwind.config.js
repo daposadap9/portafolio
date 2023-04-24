@@ -16,12 +16,13 @@ export default {
       // => @media (min-width: 640px) { ... }
       tablet: "640px",
       // => @media (min-width: 640px) { ... }
-
-      laptop: "1024px",
+      midTablet:"726px",
+      // => @media (min-width: 710px) { ... }
+      laptop: "1010px",
       // => @media (min-width: 1024px) { ... }
-
-      desktop: "1280px",
+      desktop: "1117px",
       // => @media (min-width: 1280px) { ... }
+      midDesktop:"1428px"
     },
     colors: {
       violet: "#9BA4ED",
@@ -43,6 +44,9 @@ export default {
       gridTemplateColumns: {
         two: "auto auto",
       },
+      backgroundImage: {
+        'circle-gradient': 'radial-gradient(ellipse at center bottom, rgba(42,47,79,1) 44%, rgba(1,0,12,1) 100%)',
+      }
     },
   },
   plugins: [],

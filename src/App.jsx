@@ -186,35 +186,66 @@ function App() {
           <img className="absolute top-5 midMobile:top-9 w-1/2" src="/images/code.png" alt="" />
         </div>
       </section>
-      <section>
-        <div className="bg-gray50 rounded-2xl text-white">
+      <div className="
+      pb-10
+      midTablet:flex
+      midTablet:items-center
+      midTablet:flex-row-reverse
+      midTablet:justify-center
+      midTablet:w-screen
+      midTablet:absolute
+      midTablet:left-0 p-5
+      midTablet:bg-circle-gradient
+      laptop:justify-center
+      ">
+        <section className="desktop:w-3/5 midDesktop:w-2/4">
+        <div className="bg-morado rounded-2xl text-white overflow-hidden
+        midTablet:bg-azulOscuro
+        midTablet:translate-x-[-30px]
+        midTablet:z-[-10]
+        midTablet:w-full"
+        >
           <b><h1 className="text-center pt-6">Contact me</h1></b>
-          <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black">
-            <div className="flex flex-col m-2 relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14" placeholder="Write your name here" type="text" />
+          <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black items-center
+          midTablet:flex-row
+          midTablet:flex-wrap
+          midTablet:justify-around
+          midTablet:m-2
+          ">
+            <div className="flex flex-col relative">
+              <input className="outline-none mt-8 border-b bg-morado h-14
+              midTablet:bg-azulOscuro" placeholder="Write your name here" type="text" />
               <span className="absolute left-0 px-0 py-1 duration-0.3">First name</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14" type="text" placeholder="Write your last name here" />
+              <input className="outline-none mt-8 border-b bg-morado h-14
+              midTablet:bg-azulOscuro" type="text" placeholder="Write your last name here" />
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Last name</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14" type="text" placeholder="Write your email here" />
+              <input className="outline-none mt-8 border-b bg-morado h-14
+              midTablet:bg-azulOscuro" type="text" placeholder="Write your email here" />
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Email address</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <input className="outline-none mt-8 border-b bg-morado h-14" type="text" placeholder="Write your cellphone number here" />
+              <input className="outline-none mt-8 border-b bg-morado h-14
+              midTablet:bg-azulOscuro" type="text" placeholder="Cellphone number" />
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Cellphone number</span>
             </div>
             <div className="inputBox flex flex-col m-2 relative">
-              <textarea className="outline-none border-b mt-8 bg-morado pt-6" placeholder="Write your message here..."></textarea>
+              <textarea className="outline-none border-b mt-8 bg-morado
+              midTablet:bg-azulOscuro" placeholder="Write your message here..."></textarea>
               <span className="absolute left-0 px-0 py-1 transition duration-0.3">Message</span>
             </div>
-            <button className="text-white px-4 border-2 border-white rounded-md w-3/6 my-5 mx-auto">send</button>
+            
           </form>
+          <div className="midTablet:m-2 midTablet:relative flex">
+              <button className="text-white px-4 border-2 border-white rounded-md my-5 mx-auto">send</button>
+            </div>
         </div>
       </section>
-      <section className="colorear text-white mt-10 mx-2 rounded-2xl p-5">
+      <section className="colorear text-white mt-10 mx-2 rounded-2xl p-5 
+      tablet:h-2/4 z-10">
         <h1 className="text-center">Contact information</h1>
         <ul className="list-none mt-5 mb-10 text-sm overflow-hidden">
           <li className="flex flex-wrap mt-5"><span className="mr-4"><FontAwesomeIcon icon={faLocationDot} /></span><h1>Calle 35 #54-22, Bello obrero</h1></li>
@@ -227,6 +258,8 @@ function App() {
           <li><a href=""><FontAwesomeIcon icon={faLinkedin} /></a></li>
         </ul>
       </section>
+      </div>
+      
     </div>
   );
 }
