@@ -8,6 +8,9 @@ import html from "./assets/html.json"
 import css from "./assets/css.json"
 import js from "./assets/js.json"
 import react from "./assets/react.json"
+import instagram from "./assets/instagram.json"
+import linkedin from "./assets/linkedin.json"
+import facebook from "./assets/facebook.json"
 import { saludo } from "./js/variableConmutada";
 import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -40,6 +43,9 @@ function App() {
   const containerAnimation3 = useRef(null);
   const containerAnimation4 = useRef(null);
   const containerAnimation5 = useRef(null);
+  const containerAnimation6 = useRef(null);
+  const containerAnimation7 = useRef(null);
+  const containerAnimation8 = useRef(null);
 
   useEffect(() => {
     const anim = lottie.loadAnimation({
@@ -77,12 +83,36 @@ function App() {
       autoplay: true,
       animationData: react,
     });
+    const anim6 = lottie.loadAnimation({
+      container: containerAnimation6.current,
+      render: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: instagram,
+    });
+    const anim7 = lottie.loadAnimation({
+      container: containerAnimation7.current,
+      render: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: linkedin,
+    });
+    const anim8 = lottie.loadAnimation({
+      container: containerAnimation8.current,
+      render: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: facebook,
+    });
     return () => {
       anim.destroy();
       anim2.destroy();
       anim3.destroy();
       anim4.destroy();
       anim5.destroy();
+      anim6.destroy();
+      anim7.destroy();
+      anim8.destroy();
     };
   }, [isOpen]);
 
@@ -176,7 +206,7 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center pt-6 pb-5" ref={containerAnimation2}></div>
+          <div className="flex justify-center" ref={containerAnimation2}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
@@ -301,10 +331,10 @@ function App() {
             <li className="flex flex-wrap mt-5" ><span className="mr-4"><FontAwesomeIcon className='ul__icon' icon={faEnvelope} /></span><h1>diegoposada1999@gmail.com</h1></li>
             <li className="flex flex-wrap mt-5"><span className="mr-4"><FontAwesomeIcon className='ul__icon' icon={faPhone} /></span><h1>3207689885</h1></li>
           </ul>
-          <ul className="flex gap-12 justify-center text-3xl flex-wrap">
-            <li><a href=""><FontAwesomeIcon icon={faFacebook} /></a></li>
-            <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
-            <li><a href=""><FontAwesomeIcon icon={faLinkedin} /></a></li>
+          <ul className="flex justify-around text-4xl flex-wrap">
+            <li><a href=""><span className="w-12 block" ref={containerAnimation8}></span></a></li>
+            <li><a href=""><span className="w-12 block" ref={containerAnimation6}></span></a></li>
+            <li><a href=""><span className="w-12 block" ref={containerAnimation7}></span></a></li>
           </ul>
         </section>
       </div>
