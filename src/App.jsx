@@ -176,7 +176,7 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center" ref={containerAnimation2}></div>
+          <div className="flex justify-center pt-6 pb-5" ref={containerAnimation2}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
