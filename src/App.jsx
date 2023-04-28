@@ -17,8 +17,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
+  const [backgroundDay, setBackgroundDay] = useState(true)
   const containerWidth = useRef(null);
 
+  const changeBackgroundBanner = () => {
+    setBackgroundDay(!backgroundDay)
+  }
+ 
   const [width, setWidth] = useState(window.innerWidth);
   const [isOpen, setisOpen] = useState(false);
 
@@ -134,14 +139,28 @@ function App() {
           <HeaderMobile handleActive={handleActive} isOpen={isOpen} />
         )}
       </section>
+      <div className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-96 bg-cover">
+        {
+          backgroundDay? <div className="flex flex-row">
+        <img className="object-cover" src="./images/calle/fondo.jpg" alt=""  />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+        </div> : <div className="flex flex-row">
+        <img className="object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+        <img className="object-cover" src="./images/calle/fondo2.jpg"  alt="" />
+        </div>
+        }
+      </div>
     <div
       ref={containerWidth}
       className="App m-auto h-full pl-4 pr-4 pb-4
-      miniMobile:max-w-screen-miniMobile miniMobile:bg-gray50
-      mobile:max-w-screen-mobile mobile:bg-gray50
-      midMobile:max-w-screen-midMobile midMobile:bg-gray50
-      miniTablet:max-w-screen-miniTablet miniTablet:bg-gray50
-      tablet:max-w-screen-tablet tablet:bg-gray50
+      miniMobile:max-w-screen-miniMobile miniMobile:bg-transparent
+      mobile:max-w-screen-mobile mobile:bg-transparent
+      midMobile:max-w-screen-midMobile midMobile:bg-transparent
+      miniTablet:max-w-screen-miniTablet miniTablet:bg-transparent
+      tablet:max-w-screen-tablet tablet:bg-transparent
      "
     >
       
@@ -149,15 +168,18 @@ function App() {
         <div>
           <b>
             <h1
-              className="text-violet text-center 
+              className="text-violet text-center shadow-lg
             first:text-2xl
             midMobile:text-3xl
             tablet:text-4xl"
-            >
+            style={{ display: 'inline-block' }}>
               {saludo}
             </h1>
           </b>
         </div>
+      </section>
+      <section className="flex justify-center">
+        <button className="text-white px-4 border-2 border-white rounded-md bg-gray50"  onClick={changeBackgroundBanner}>cambiar </button>
       </section>
       {/* <section id="" className="fixed top-9 first:left-28">
         <img src="/images/ellipse/Ellipse-4.png " />
@@ -170,7 +192,7 @@ function App() {
       <section
         ref={containerAnimation}
         id="animation"
-        className="items-center z-20 m-auto tablet:w-2/4 first:w-3/4"
+        className="items-center z-20 m-auto tablet:w-2/4 first:w-3/4 pt-7"
       ></section>
 
       <section id="textHome">

@@ -7,7 +7,6 @@ const HeaderMobile = ({ handleActive, isOpen }) => {
   return (
     <div
       className="bg-morado2 text-white h-14 w-full flex justify-around items-center shadow-md rounded-md
-    tablet:hidden
     "
     >
       <li className="px-2 py-2 list-none">
