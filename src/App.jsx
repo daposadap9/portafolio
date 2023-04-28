@@ -12,25 +12,68 @@ import instagram from "./assets/instagram.json"
 import linkedin from "./assets/linkedin.json"
 import facebook from "./assets/facebook.json"
 import { saludo } from "./js/variableConmutada";
-import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLocationDot, faMoon, faPhone, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
-  const [backgroundDay, setBackgroundDay] = useState(true)
-  const containerWidth = useRef(null);
 
+  //background de imagen
+  const [backgroundDay, setBackgroundDay] = useState(true)
   const changeBackgroundBanner = () => {
     setBackgroundDay(!backgroundDay)
   }
- 
+
+  //logica para carrucel
+  const slideshow = useRef(null)
+  const intervaloSlideshow = useRef(null);
+  const desplazarse = () => {
+    if(slideshow.current.children.length > 0){
+      const primerElemento = slideshow.current.children[0]
+      slideshow.current.style.transition = "500 ease-out-all"
+      const tamañoSlide= slideshow.current.children[0].offsetWidth;
+      slideshow.current.style.transform = `translateX(-${tamañoSlide}px)`
+      const transicion =()=> {
+        //Reinciamos la posicion deL Slideshow.
+     slideshow.current.style.transition = 'none';
+     slideshow.current.style.transform =  `translateX(0)`;
+    
+    //Tomamos el primer elemento y lo mandamos al final
+    slideshow.current.appendChild(primerElemento);
+    slideshow.current.removeEventListener('transitionend', transicion)
+    slideshow.current.addEventListener('transitionend', transicion);
+  }
+}
+}
+  useEffect(()=>{
+    intervaloSlideshow.current = setInterval(()=>{
+      desplazarse(intervaloSlideshow);
+  }, 5000);
+  },[])
+  
+  
+
+
+
+
+  //refencia ancho
+  const containerWidth = useRef(null);
   const [width, setWidth] = useState(window.innerWidth);
+
+
+
+
+  //active menu nav
   const [isOpen, setisOpen] = useState(false);
 
   const handleActive = () => {
     setisOpen(!isOpen);
   };
 
+
+
+
+
+  //UseEffect para capturar el ancho
   useEffect(() => {
     //funcion y disparador para almacenar el width en el useState()
     function handleResize() {
@@ -43,6 +86,11 @@ function App() {
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
 
+
+  
+
+
+  //animaciones
   const containerAnimation = useRef(null);
   const containerAnimation2 = useRef(null);
   const containerAnimation3 = useRef(null);
@@ -121,6 +169,9 @@ function App() {
     };
   }, [isOpen]);
 
+
+
+//logica para formulario
   const handleSubmit = (e) => {
     e.preventDefault()
   }
@@ -139,15 +190,15 @@ function App() {
           <HeaderMobile handleActive={handleActive} isOpen={isOpen} />
         )}
       </section>
-      <div className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-96 bg-cover">
+      <div className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-96 bg-cover" >
         {
-          backgroundDay? <div className="flex flex-row">
-        <img className="object-cover" src="./images/calle/fondo.jpg" alt=""  />
+          backgroundDay? <div className="flex flex-row" ref={slideshow}>
+        <img id="imagen" className="object-cover" src="./images/calle/fondo.jpg" alt=""  />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
         </div> : <div className="flex flex-row">
-        <img className="object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+        <img className="object-cover" src="./images/calle/fondo2.jpg" alt="" ref={slideshow}  />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         <img className="object-cover" src="./images/calle/fondo2.jpg"  alt="" />
         </div>
@@ -168,18 +219,22 @@ function App() {
         <div>
           <b>
             <h1
-              className="text-violet text-center shadow-lg
+              className="sombras text-violetClaro text-center
             first:text-2xl
             midMobile:text-3xl
             tablet:text-4xl"
-            style={{ display: 'inline-block' }}>
+            >
               {saludo}
             </h1>
           </b>
         </div>
       </section>
       <section className="flex justify-center">
-        <button className="text-white px-4 border-2 border-white rounded-md bg-gray50"  onClick={changeBackgroundBanner}>cambiar </button>
+        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet"  onClick={changeBackgroundBanner}>{backgroundDay?
+        <FontAwesomeIcon
+        icon={faSun} style={{color: "#ffdd00",}} />:
+        <FontAwesomeIcon
+        icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Cambiar fondo</button>
       </section>
       {/* <section id="" className="fixed top-9 first:left-28">
         <img src="/images/ellipse/Ellipse-4.png " />

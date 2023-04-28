@@ -36,7 +36,8 @@ export default {
       grayOscuro: "#101011",
       morado: "#2A2F4F",
       morado2: "#2a2f4fe3",
-      transparent: "rgba(255, 255, 255, 0)"
+      transparent: "rgba(255, 255, 255, 0)",
+      violetClaro:"rgb(193, 110, 238)"
     },
     extend: {
       fontFamily: {
