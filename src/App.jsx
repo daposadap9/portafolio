@@ -191,13 +191,18 @@ function App() {
      *Linea 18 clase sticky para dejar el componente header fijo en pantalla y centrar con flex
      */
      <>
-     <section className="top-0 z-50 sticky">
+     <motion.section 
+     initial={{opacity:0}}
+     animate={{opacity:1}}
+     transition={{ duration: 1}}
+     
+     className="top-0 z-50 sticky">
         {width >= 640 ? (
           <Header />
         ) : (
           <HeaderMobile handleActive={handleActive} isOpen={isOpen} />
         )}
-      </section>
+      </motion.section>
       <motion.div
       initial={{opacity:0}}
       animate={{opacity:1}}
@@ -222,7 +227,10 @@ function App() {
         </div>
         }
       </motion.div>
-    <div
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{ duration: 1}}
       ref={containerWidth}
       className="App m-auto h-full pl-4 pr-4 pb-4
       miniMobile:max-w-screen-miniMobile miniMobile:bg-transparent
@@ -447,7 +455,7 @@ function App() {
           </ul>
         </section>
       </div>
-    </div>
+    </motion.div>
     </>
   );
 }
