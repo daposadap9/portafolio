@@ -320,7 +320,7 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center" ref={containerAnimation2}></div>
+          <div data-aos="fade-left" className="flex justify-center" ref={containerAnimation2}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
@@ -332,7 +332,7 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center" ref={containerAnimation3}></div>
+          <div data-aos="fade-right" className="flex justify-center" ref={containerAnimation3}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
@@ -344,7 +344,7 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center pt-5 pb-5" ref={containerAnimation4}></div>
+          <div data-aos="fade-left" className="flex justify-center pt-5 pb-5" ref={containerAnimation4}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
@@ -356,7 +356,7 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center pt-5 pb-5" ref={containerAnimation5}></div>
+          <div data-aos="fade-right" className="flex justify-center pt-5 pb-5" ref={containerAnimation5}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
