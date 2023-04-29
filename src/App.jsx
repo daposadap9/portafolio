@@ -53,7 +53,7 @@ function App() {
     const reiniciarIntervalo = () =>{
       intervaloSlideshow.current = setInterval(()=>{
         Siguiente(intervaloSlideshow);
-    }, 1000);
+    }, 0);
     }
     useEffect(()=>{
        reiniciarIntervalo()
