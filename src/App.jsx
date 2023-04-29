@@ -200,12 +200,13 @@ function App() {
       <div className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px] bg-cover" >
         {
           backgroundDay? <div className="flex flex-row" ref={slideshow}>
+            
         <img id="imagen" className="object-cover" src="./images/calle/fondo.jpg" alt=""  />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
-        </div> : <div className="flex flex-row">
-        <img className="object-cover" src="./images/calle/fondo2.jpg" alt="" ref={slideshow}  />
+        </div> : <div className="flex flex-row" ref={slideshow}>
+        <img className="object-cover" src="./images/calle/fondo2.jpg" alt=""   />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         <img className="object-cover" src="./images/calle/fondo2.jpg"  alt="" />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
