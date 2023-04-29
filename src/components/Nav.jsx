@@ -6,7 +6,7 @@ const Nav = ({ handleActive }) => {
     <motion.nav
       initial={{ width: 0 }}
       animate={{ width: "100vw" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.8 } }}s
+      transition={{ duration: 0.5}}
       className="absolute w-full h-screen top-0 bg-circle-gradient backdrop-blur-15 z-10"
     >
       <ul className="flex flex-col justify-center items-center h-screen gap-16">
