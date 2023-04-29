@@ -19,13 +19,14 @@ function App() {
 
   //background de imagen
   const [backgroundDay, setBackgroundDay] = useState(true)
-  const changeBackgroundBanner = () => {
-    setBackgroundDay(!backgroundDay)
-  }
 
   //logica para carrucel
   const slideshow = useRef(null);
   const intervaloSlideshow = useRef(null);
+
+  const changeBackground = () => {
+    setBackgroundDay(!backgroundDay)
+  }
   const Siguiente = () =>{
             //Se comprueba que el slideshow contenga elementos
         if(slideshow.current.children.length > 0){
@@ -49,11 +50,10 @@ function App() {
             slideshow.current.addEventListener('transitionend', transicion);
         }
     }
-
     const reiniciarIntervalo = () =>{
       intervaloSlideshow.current = setInterval(()=>{
         Siguiente(intervaloSlideshow);
-    }, 0);
+    }, 1000);
     }
     useEffect(()=>{
        reiniciarIntervalo()
@@ -90,6 +90,8 @@ function App() {
     // Limpia el evento al desmontar el componente
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
+
+
 
 
   
@@ -236,12 +238,11 @@ function App() {
         </div>
       </section>
       <section className="flex justify-center">
-        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet"  onClick={changeBackgroundBanner}>{backgroundDay?
+        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet"  onClick={changeBackground}>{backgroundDay?
         <FontAwesomeIcon
         icon={faSun} style={{color: "#ffdd00",}} />:
         <FontAwesomeIcon
         icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Cambiar fondo</button>
-        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet" onClick={Siguiente}>siguiente</button>
       </section>
       {/* <section id="" className="fixed top-9 first:left-28">
         <img src="/images/ellipse/Ellipse-4.png " />
@@ -254,7 +255,7 @@ function App() {
       <section
         ref={containerAnimation}
         id="animation"
-        className="items-center z-20 m-auto tablet:w-2/4 first:w-3/4 pt-7"
+        className="items-center z-20 m-auto tablet:w-2/4 first:w-3/4 pt-7 scale-x-[-1]"
       ></section>
 
       <section id="textHome">
