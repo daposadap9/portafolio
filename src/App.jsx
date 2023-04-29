@@ -312,7 +312,7 @@ function App() {
       miniTablet:p-9 miniTablet:w-8/12
       tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
       " id="Cards" >
-        <div data-aos="fade-left" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-left" data-aos-duration="2000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -324,7 +324,7 @@ function App() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-right" data-aos-duration="2000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -336,7 +336,7 @@ function App() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-left" data-aos-duration="2000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -348,7 +348,7 @@ function App() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-right" data-aos-duration="2000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
