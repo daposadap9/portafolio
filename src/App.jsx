@@ -197,7 +197,7 @@ function App() {
           <HeaderMobile handleActive={handleActive} isOpen={isOpen} />
         )}
       </section>
-      <div className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-96 bg-cover" >
+      <div className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px] bg-cover" >
         {
           backgroundDay? <div className="flex flex-row" ref={slideshow}>
         <img id="imagen" className="object-cover" src="./images/calle/fondo.jpg" alt=""  />
@@ -255,7 +255,13 @@ function App() {
       <section
         ref={containerAnimation}
         id="animation"
-        className="items-center z-20 m-auto tablet:w-2/4 first:w-3/4 pt-7 scale-x-[-1]"
+        className="items-center z-20 m-auto pt-44 scale-x-[-1]
+        first:w-5/5 first:pt-28  
+        miniMobile:pt-24 
+        mobile:w-3/4 mobile:pt-28
+        midMobile:pt-14
+        miniTablet:w-2/3 
+        tablet:w-2/4 "
       ></section>
 
       <section id="textHome">
