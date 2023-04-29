@@ -408,7 +408,7 @@ function App() {
               <div className="inputBox flex flex-col m-2 w-72 midTablet:mt-10">
                 <textarea className="outline-none border-b mt-8 bg-transparent focus:text-violet w-2/4 mx-auto text-center"
                   placeholder="Write your message here..." id="message"></textarea>
-                <label htmlFor="message" className="flex mx-auto px-0 translate-y-[-80px]" id="message">Message</label>
+                <label htmlFor="message" className="flex w-50% mx-20 px-0 translate-y-[-80px]" id="message">Message</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative w-full">
               <button className="text-white px-4 border-2 border-white rounded-md my-5 mx-auto first:w-36">send</button>
