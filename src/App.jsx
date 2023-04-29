@@ -359,8 +359,8 @@ function App() {
       </section>
       <div className="
       pb-10
+      items-center
       midTablet:flex
-      midTablet:items-center
       midTablet:flex-row-reverse
       midTablet:justify-center
       midTablet:w-full
@@ -378,6 +378,8 @@ function App() {
           >
             <b><h1 className="text-center pt-6 text-violet text-2xl mb-4 overflow-hidden">Contact me</h1></b>
             <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black items-center
+          miniTablet:flex-row
+          miniTablet:flex-wrap
           midTablet:flex-row
           midTablet:flex-wrap
           midTablet:justify-around
@@ -403,13 +405,13 @@ function App() {
                   placeholder="Cellphone number" id="cellPhone"/>
                 <label htmlFor="cellPhone" className="absolute left-0 px-0 py-1 transition duration-0.3">Cellphone number</label>
               </div>
-              <div className="inputBox flex flex-col m-2 relative">
-                <textarea className="outline-none border-b mt-8 bg-transparent focus:text-violet"
+              <div className="inputBox flex flex-col m-2 w-72 midTablet:mt-10">
+                <textarea className="outline-none border-b mt-8 bg-transparent focus:text-violet w-2/4 mx-auto text-center"
                   placeholder="Write your message here..." id="message"></textarea>
-                <label htmlFor="message" className="absolute left-0 px-0 py-1 transition duration-0.3" id="message">Message</label>
+                <label htmlFor="message" className="flex mx-auto px-0 translate-y-[-80px]" id="message">Message</label>
               </div>
-              <div className="midTablet:m-2 midTablet:relative flex">
-              <button className="text-white px-4 border-2 border-white rounded-md my-5 mx-auto">send</button>
+              <div className="inputBox flex flex-col m-2 relative w-full">
+              <button className="text-white px-4 border-2 border-white rounded-md my-5 mx-auto first:w-36">send</button>
             </div>
             </form>
             
@@ -423,7 +425,13 @@ function App() {
             <li className="flex flex-wrap mt-5" ><span className="mr-4"><FontAwesomeIcon className='ul__icon' icon={faEnvelope} /></span><h1>diegoposada1999@gmail.com</h1></li>
             <li className="flex flex-wrap mt-5"><span className="mr-4"><FontAwesomeIcon className='ul__icon' icon={faPhone} /></span><h1>3207689885</h1></li>
           </ul>
-          <ul className="flex justify-around text-4xl flex-wrap">
+          <ul className="flex 
+          justify-around
+          miniTablet:justify-center
+          miniTablet:gap-10
+          midTablet:gap-0
+          midTablet:justify-around
+          text-4xl flex-wrap">
             <li><a href=""><span className="w-12 block" ref={containerAnimation8}></span></a></li>
             <li><a href=""><span className="w-12 block" ref={containerAnimation6}></span></a></li>
             <li><a href=""><span className="w-12 block" ref={containerAnimation7}></span></a></li>
