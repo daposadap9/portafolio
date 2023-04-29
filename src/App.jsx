@@ -24,35 +24,40 @@ function App() {
   }
 
   //logica para carrucel
-  const slideshow = useRef(null)
+  const slideshow = useRef(null);
   const intervaloSlideshow = useRef(null);
-  const desplazarse = () => {
-    if(slideshow.current.children.length > 0){
-      const primerElemento = slideshow.current.children[0]
-      slideshow.current.style.transition = "500 ease-out-all"
-      const tamañoSlide= slideshow.current.children[0].offsetWidth;
-      slideshow.current.style.transform = `translateX(-${tamañoSlide}px)`
-      const transicion =()=> {
-        //Reinciamos la posicion deL Slideshow.
-     slideshow.current.style.transition = 'none';
-     slideshow.current.style.transform =  `translateX(0)`;
-    
-    //Tomamos el primer elemento y lo mandamos al final
-    slideshow.current.appendChild(primerElemento);
-    slideshow.current.removeEventListener('transitionend', transicion)
-    slideshow.current.addEventListener('transitionend', transicion);
-  }
-}
-}
-  useEffect(()=>{
-    intervaloSlideshow.current = setInterval(()=>{
-      desplazarse(intervaloSlideshow);
-  }, 5000);
-  },[])
-  
-  
+  const Siguiente = () =>{
+            //Se comprueba que el slideshow contenga elementos
+        if(slideshow.current.children.length > 0){
+            //Obtenemos el primer valor del slideshow
+            const primerElemento = slideshow.current.children[0];
+            //Esta es la transicion a la que se accede en el elemento slideshow
+            slideshow.current.style.transition = `2000ms ease-out all`;
+            const tamañoSlide= slideshow.current.children[0].offsetWidth;
+            //mover el slideshow
+            slideshow.current.style.transform = `translateX(-${tamañoSlide}px)`;
+            const transicion =()=> {
+                //Reinciamos la posicion deL Slideshow.
+            slideshow.current.style.transition = 'none';
+            slideshow.current.style.transform =  `translateX(0)`;
+            
+            //Tomamos el primer elemento y lo mandamos al final
+            slideshow.current.appendChild(primerElemento);
+            slideshow.current.removeEventListener('transitionend', transicion)
+            }
+            //EventListener para cuando termina la transicion.
+            slideshow.current.addEventListener('transitionend', transicion);
+        }
+    }
 
-
+    const reiniciarIntervalo = () =>{
+      intervaloSlideshow.current = setInterval(()=>{
+        Siguiente(intervaloSlideshow);
+    }, 0);
+    }
+    useEffect(()=>{
+       reiniciarIntervalo()
+    },[]);
 
 
   //refencia ancho
@@ -196,11 +201,12 @@ function App() {
         <img id="imagen" className="object-cover" src="./images/calle/fondo.jpg" alt=""  />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
-        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
         </div> : <div className="flex flex-row">
         <img className="object-cover" src="./images/calle/fondo2.jpg" alt="" ref={slideshow}  />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         <img className="object-cover" src="./images/calle/fondo2.jpg"  alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         </div>
         }
       </div>
@@ -235,6 +241,7 @@ function App() {
         icon={faSun} style={{color: "#ffdd00",}} />:
         <FontAwesomeIcon
         icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Cambiar fondo</button>
+        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet" onClick={Siguiente}>siguiente</button>
       </section>
       {/* <section id="" className="fixed top-9 first:left-28">
         <img src="/images/ellipse/Ellipse-4.png " />
