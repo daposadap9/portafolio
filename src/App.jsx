@@ -14,6 +14,7 @@ import facebook from "./assets/facebook.json"
 import { saludo } from "./js/variableConmutada";
 import { faEnvelope, faLocationDot, faMoon, faPhone, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { motion } from "framer-motion";
 
 function App() {
 
@@ -197,22 +198,30 @@ function App() {
           <HeaderMobile handleActive={handleActive} isOpen={isOpen} />
         )}
       </section>
-      <div className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px] bg-cover" >
+      <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      transition={{ duration: 1}}
+      className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px]" >
         {
           backgroundDay? <div className="flex flex-row" ref={slideshow}>
-            
-        <img id="imagen" className="object-cover" src="./images/calle/fondo.jpg" alt=""  />
+        <img className="object-cover " src="./images/calle/fondo.jpg" alt=""  />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
-        </div> : <div className="flex flex-row" ref={slideshow}>
-        <img className="object-cover" src="./images/calle/fondo2.jpg" alt=""   />
+        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+        </div> : <div
+        className="flex flex-row" ref={slideshow}>
+        <img className="object-cover " src="./images/calle/fondo2.jpg" alt=""   />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
-        <img className="object-cover" src="./images/calle/fondo2.jpg"  alt="" />
+        <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+        <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         </div>
         }
-      </div>
+      </motion.div>
     <div
       ref={containerWidth}
       className="App m-auto h-full pl-4 pr-4 pb-4
