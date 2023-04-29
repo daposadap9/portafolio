@@ -15,8 +15,13 @@ import { saludo } from "./js/variableConmutada";
 import { faEnvelope, faLocationDot, faMoon, faPhone, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from "framer-motion";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
+  useEffect(()=>{
+    Aos.init();
+      },[])
 
   //background de imagen
   const [backgroundDay, setBackgroundDay] = useState(true)
@@ -244,7 +249,7 @@ function App() {
       <section className="m-4">
         <div>
           <b>
-            <h1
+            <h1 data-aos="fade-left"
               className="sombras text-violetClaro text-center
             first:text-2xl
             midMobile:text-3xl
@@ -282,7 +287,7 @@ function App() {
         tablet:w-2/4 "
       ></section>
 
-      <section id="textHome">
+      <section data-aos="fade-down" id="textHome">
         <div className="flex justify-center items-center m-4 text-center">
           <b>
             <h1 className="text-violet text-4xl">Hi!</h1>
