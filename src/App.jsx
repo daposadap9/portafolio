@@ -287,7 +287,7 @@ function App() {
         tablet:w-2/4 "
       ></section>
 
-      <section data-aos="fade-down" id="textHome">
+      <section data-aos="fade-down" data-aos-once="true" id="textHome">
         <div className="flex justify-center items-center m-4 text-center">
           <b>
             <h1 className="text-violet text-4xl">Hi!</h1>
@@ -336,7 +336,7 @@ function App() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="2000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-left" data-aos-duration="3000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -348,7 +348,7 @@ function App() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="2000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-right" data-aos-duration="3000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14

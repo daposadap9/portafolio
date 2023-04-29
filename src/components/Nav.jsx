@@ -10,26 +10,42 @@ const Nav = ({ handleActive }) => {
       className="absolute w-full h-screen top-0 bg-circle-gradient backdrop-blur-15 z-10"
     >
       <ul className="flex flex-col justify-center items-center h-screen gap-16">
-        <li className="px-4 py-2 border-b-2 border-white">
+        <motion.li
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.6}}
+        className="px-4 py-2 border-b-2 border-white">
           <a href="">
             <h1>Home</h1>
           </a>
-        </li>
-        <li className="px-4 py-2 border-b-2 border-white">
+        </motion.li>
+        <motion.li 
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.8}}
+        className="px-4 py-2 border-b-2 border-white">
           <a href="">
             <h1>Projects</h1>
           </a>
-        </li>
-        <li className="px-4 py-2 border-b-2 border-white">
+        </motion.li>
+        <motion.li
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1}}
+        className="px-4 py-2 border-b-2 border-white">
           <a href="">
             <h1>About me</h1>
           </a>
-        </li>
-        <li className="px-4 py-2 border-b-2 border-white">
+        </motion.li>
+        <motion.li
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1.2}}
+        className="px-4 py-2 border-b-2 border-white">
           <a href="">
             <h1>Contact me</h1>
           </a>
-        </li>
+        </motion.li>
       </ul>
       <div className="absolute w-10 right-3 top-2 text-white">
         <button onClick={handleActive}>
