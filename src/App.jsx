@@ -20,7 +20,7 @@ import 'aos/dist/aos.css';
 
 function App() {
   useEffect(()=>{
-    Aos.init();
+    Aos.init({duration:1000});
       },[])
 
   //background de imagen
@@ -312,7 +312,7 @@ function App() {
       miniTablet:p-9 miniTablet:w-8/12
       tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
       " id="Cards" >
-        <div className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-left" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -320,11 +320,11 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div data-aos="fade-left" className="flex justify-center" ref={containerAnimation2}></div>
+          <div className="flex justify-center" ref={containerAnimation2}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-right" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -332,11 +332,11 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div data-aos="fade-right" className="flex justify-center" ref={containerAnimation3}></div>
+          <div className="flex justify-center" ref={containerAnimation3}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-left" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -344,11 +344,11 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div data-aos="fade-left" className="flex justify-center pt-5 pb-5" ref={containerAnimation4}></div>
+          <div className="flex justify-center pt-5 pb-5" ref={containerAnimation4}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-right" data-aos-duration="2000" className="text-white mt-3 bg-gray z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -356,7 +356,7 @@ function App() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div data-aos="fade-right" className="flex justify-center pt-5 pb-5" ref={containerAnimation5}></div>
+          <div className="flex justify-center pt-5 pb-5" ref={containerAnimation5}></div>
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
