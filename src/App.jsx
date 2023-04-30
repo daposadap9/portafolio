@@ -304,7 +304,7 @@ function App() {
           Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
           to create customized and effective frontend solutions that exceed their expectations.
         </p>
-        <button className="text-white px-4 border-2 border-white rounded-md ">click here</button>
+        <button className="text-white boton"><a href="">click here</a></button>
       </section>
       <section className="bg-grayOscuro  mt-6 rounded-xl w-5/6 flex flex-col m-auto p-3
       miniMobile:p-4
@@ -434,7 +434,7 @@ function App() {
                 <label htmlFor="message" className="flex w-50% mx-20 px-0 translate-y-[-80px]" id="message">Message</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative w-full">
-              <button className="text-white px-4 border-2 border-white rounded-md my-5 mx-auto first:w-36">send</button>
+              <button className="text-white boton"><a href="">send</a></button>
             </div>
             </form>
             
