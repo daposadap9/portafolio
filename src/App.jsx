@@ -65,7 +65,6 @@ function App() {
        reiniciarIntervalo()
     },[]);
 
-
   //refencia ancho
   const containerWidth = useRef(null);
   const [width, setWidth] = useState(window.innerWidth);
@@ -212,9 +211,11 @@ function App() {
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{ duration: 1}}
+      exitBeforeEnter
       className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px]" >
         {
-          backgroundDay? <div className="flex flex-row" ref={slideshow}>
+          backgroundDay? <div
+          className="flex flex-row" ref={slideshow}>
         <img className="object-cover " src="./images/calle/fondo.jpg" alt=""  />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
@@ -222,7 +223,7 @@ function App() {
         <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
         </div> : <div
-        className="flex flex-row" ref={slideshow}>
+        className="flex flex-row fade-out" ref={slideshow}>
         <img className="object-cover " src="./images/calle/fondo2.jpg" alt=""   />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
@@ -242,7 +243,7 @@ function App() {
       mobile:max-w-screen-mobile mobile:bg-transparent
       midMobile:max-w-screen-midMobile midMobile:bg-transparent
       miniTablet:max-w-screen-miniTablet miniTablet:bg-transparent
-      tablet:max-w-screen-tablet tablet:bg-transparent
+      tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden
      "
     >
       
@@ -261,7 +262,7 @@ function App() {
         </div>
       </section>
       <section className="flex justify-center">
-        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet"  onClick={changeBackground}>{backgroundDay?
+        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet" id="myButton"  onClick={changeBackground}>{backgroundDay?
         <FontAwesomeIcon
         icon={faSun} style={{color: "#ffdd00",}} />:
         <FontAwesomeIcon
