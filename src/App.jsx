@@ -304,7 +304,7 @@ function App() {
           Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
           to create customized and effective frontend solutions that exceed their expectations.
         </p>
-        <button className="text-white boton"><a href="">click here</a></button>
+        <button className="text-white boton"><a href="#textHome">click here</a></button>
       </section>
       <section className="bg-grayOscuro  mt-6 rounded-xl w-5/6 flex flex-col m-auto p-3
       miniMobile:p-4
@@ -392,7 +392,7 @@ function App() {
       midTablet:bg-circle-gradient
       laptop:justify-center
       ">
-        <section className="desktop:w-3/5 midDesktop:w-5/12">
+        <section id="contact" className="desktop:w-3/5 midDesktop:w-5/12">
           <div className="rounded-2xl bg-circle-gradient text-white overflow-hidden
         midTablet:bg-circle-gradient2
         midTablet:translate-x-[-30px]
@@ -410,31 +410,31 @@ function App() {
           ">
               <div className="flex flex-col relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet"
-                  placeholder="Write your name here" type="text" id="firstName"/>
+                  placeholder="Write your name here" type="text" id="firstName" required/>
                 <label htmlFor="firstName" className="absolute left-0 px-0 py-1 duration-0.3">First name</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
-                  placeholder="Write your last name here" id="lastName"/>
+                  placeholder="Write your last name here" id="lastName" required/>
                 <label htmlFor="lastName" className="absolute left-0 px-0 py-1 transition duration-0.3">Last name</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
-                  placeholder="Write your email here" id="email" />
+                  placeholder="Write your email here" id="email" required/>
                 <label htmlFor="email" className="absolute left-0 px-0 py-1 transition duration-0.3">Email address</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
-                  placeholder="Cellphone number" id="cellPhone"/>
+                  placeholder="Cellphone number" id="cellPhone" required/>
                 <label htmlFor="cellPhone" className="absolute left-0 px-0 py-1 transition duration-0.3">Cellphone number</label>
               </div>
               <div className="inputBox flex flex-col m-2 w-72 midTablet:mt-10">
                 <textarea className="outline-none border-b mt-8 bg-transparent focus:text-violet w-2/4 mx-auto text-center"
-                  placeholder="Write your message here..." id="message"></textarea>
+                  placeholder="Write your message here..." id="message" required></textarea>
                 <label htmlFor="message" className="flex w-50% mx-20 px-0 translate-y-[-80px]" id="message">Message</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative w-full">
-              <button className="text-white boton"><a href="">send</a></button>
+              <button className="text-white boton"><a href="#contact">send</a></button>
             </div>
             </form>
             

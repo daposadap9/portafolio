@@ -37,7 +37,7 @@
   border-bottom: 2px solid #fff;
   transition: 1s;
 }
-.boton a:hover::before{
+.boton a:hover::before {
   inset: 0 -12px;
   transform: skewY(15deg);
 }
