@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Nav = ({ handleActive }) => {
   return (
@@ -16,18 +17,18 @@ const Nav = ({ handleActive }) => {
         animate={{ x: 0 }}
         transition={{ duration: 0.6}}
         className="px-4 py-2 border-b-2 border-white sombras2">
-          <a href="">
+          <Link to="/">
             <h1>Home</h1>
-          </a>
+          </Link>
         </motion.li>
         <motion.li 
         initial={{ x: -1000 }}
         animate={{ x: 0 }}
         transition={{ duration: 0.8}}
         className="px-4 py-2 border-b-2 border-white sombras2">
-          <a href="">
+          <Link to="/projects">
             <h1>Projects</h1>
-          </a>
+          </Link>
         </motion.li>
         <motion.li
         initial={{ x: -1000 }}

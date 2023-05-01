@@ -1,0 +1,47 @@
+.colorear {
+    background: linear-gradient(to bottom right, #2a2f4f, #01000c);
+    background-size: cover;
+  }
+  .sombras{
+    text-shadow: 1px 3px 1px rgb(61, 1, 139);
+  }
+  .sombras2{
+    text-shadow: 1px 3px 1px rgb(132, 2, 253);
+  }
+  .boton a{
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    transition: 0.5s;
+    padding: 20px 40px;
+  
+  }
+  .boton a:hover{
+    border: 2px solid #fff
+  }
+  .boton a::before{
+    content: "";
+    position: absolute;
+    inset: 0 8px;
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transition: 1s;
+  }
+  .boton a::after{
+    content: '';
+    position: absolute;
+    inset: 8px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: 1s;
+  }
+  .boton a:hover::before {
+    inset: 0 -12px;
+    transform: skewY(15deg);
+  }
+  .boton a:hover::after{
+    inset: -12px 0;
+    transform: skewX(15deg);
+  }

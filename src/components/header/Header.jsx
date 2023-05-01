@@ -1,12 +1,12 @@
 import {faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header
-      className="list-none bg-morado2 text-white h-14 flex
-    justify-center items-center px-3 py-4 rounded-md shadow-md overflow-hidden
+      className="list-none bg-morado2 text-white h-14 flex justify-evenly items-center px-3 py-4 rounded-md shadow-md overflow-hidden
     "
     >
       <li className="px-4 py-2">
@@ -15,14 +15,14 @@ const Header = () => {
       <nav className="flex">
         <ul className="flex items-center">
           <li className="px-4 py-2">
-            <a href="">
+            <Link to="/">
               <h1>Home</h1>
-            </a>
+            </Link>
           </li>
           <li className="px-4 py-2">
-            <a href="">
+            <Link to="/projects">
               <h1>Projects</h1>
-            </a>
+            </Link>
           </li>
           <li className="px-4 py-2">
             <a href="">
