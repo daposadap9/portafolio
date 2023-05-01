@@ -90,7 +90,14 @@ function Home() {
      *Linea 18 clase sticky para dejar el componente header fijo en pantalla y centrar con flex
      */
      <>
-    <Banner backgroundDay={backgroundDay}/>
+    <Banner backgroundDay={backgroundDay}>
+    <img className="object-cover " src="./images/calle/fondo.jpg" alt=""  />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+    <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+    </Banner>
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
