@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "../Home/Home.css";
 import lottie from "lottie-web";
-import robot from "../../assets/robot.json";
 import html from "../../assets/html.json"
 import css from "../../assets/css.json"
 import js from "../../assets/js.json"
@@ -13,6 +12,7 @@ import { motion } from "framer-motion";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Banner from "../../components/Banner/Banner";
+import Animation from "../../components/Animation";
 
 function Home() {
   useEffect(()=>{
@@ -27,20 +27,12 @@ function Home() {
     setBackgroundDay(!backgroundDay)
   }
   //animaciones
-  const containerAnimation = useRef(null);
   const containerAnimation2 = useRef(null);
   const containerAnimation3 = useRef(null);
   const containerAnimation4 = useRef(null);
   const containerAnimation5 = useRef(null);
 
   useEffect(() => {
-    const anim = lottie.loadAnimation({
-      container: containerAnimation.current,
-      render: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: robot,
-    });
     const anim2 = lottie.loadAnimation({
       container: containerAnimation2.current,
       render: "svg",
@@ -70,7 +62,6 @@ function Home() {
       animationData: react,
     });
     return () => {
-      anim.destroy();
       anim2.destroy();
       anim3.destroy();
       anim4.destroy();
@@ -90,14 +81,26 @@ function Home() {
      *Linea 18 clase sticky para dejar el componente header fijo en pantalla y centrar con flex
      */
      <>
-    <Banner backgroundDay={backgroundDay}>
-    <img className="object-cover " src="./images/calle/fondo.jpg" alt=""  />
-        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
-        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
-        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
-        <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
-    <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
-    </Banner>
+     {
+      backgroundDay ? 
+      <Banner backgroundDay={backgroundDay}>
+      <img className="object-cover " src="./images/calle/fondo.jpg" alt=""  />
+          <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+          <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+          <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+          <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+      <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+      </Banner> : 
+      <Banner backgroundDay={backgroundDay}>
+      <img className="object-cover " src="./images/calle/fondo2.jpg" alt=""   />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+        <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+        <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+      </Banner>
+     }
+    
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
@@ -139,18 +142,7 @@ function Home() {
           src="/images/ellipse/Ellipse-1.png"
         />
       </section> */}
-
-      <section
-        ref={containerAnimation}
-        id="animation"
-        className="items-center z-20 m-auto pt-44 scale-x-[-1]
-        first:w-5/5 first:pt-28  
-        miniMobile:pt-24 
-        mobile:w-3/4 mobile:pt-28
-        midMobile:pt-14
-        miniTablet:w-2/3 
-        tablet:w-2/4 "
-      ></section>
+      <Animation/>
 
       <section data-aos="fade-down" data-aos-once="true" id="textHome">
         <div className="flex justify-center items-center m-4 text-center">

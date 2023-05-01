@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
-import Projects from "./pages/projects/projects";
+import Projects from "./pages/projects/Projects"
 import HeaderComplete from "./components/header/HeaderComplete";
 import { useEffect, useRef, useState } from "react";
 import Contact from "./components/Contact";

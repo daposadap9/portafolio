@@ -1,11 +1,17 @@
 import React from 'react'
 import Banner from '../../components/Banner/Banner'
 import { motion } from "framer-motion";
+import Animation from '../../components/Animation';
 
 const Projects = () => {
   return (
   <>
-  <div className='relative m-auto h-[500px]'><Banner/></div>
+    <Banner>
+      <img className="object-cover " src="./images/calle/desierto.jpeg" alt=""  />
+      <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
+      <img className="object-cover" src="./images/calle/desierto.jpeg" alt="" />
+      <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
+    </Banner>
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
@@ -17,8 +23,15 @@ const Projects = () => {
       miniTablet:max-w-screen-miniTablet miniTablet:bg-transparent
       tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden
      "
-    >
-      <b><h1 className='text-white text-center text-3xl mt-4'>My Projects</h1></b>
+    ><b><h1
+    className="sombras text-violetClaro text-center mt-5
+    first:text-2xl
+    midMobile:text-3xl
+    tablet:text-4xl"
+    >My Projects</h1></b>
+    <div className='mt-16'>
+      <Animation/>
+      </div>
     </motion.div>
     </>
   )

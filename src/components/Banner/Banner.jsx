@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { motion } from "framer-motion";
 
 
-const Banner = ({backgroundDay, children}) => {
+const Banner = ({children}) => {
     const slideshow = useRef(null);
     const intervaloSlideshow = useRef(null);
     const Siguiente = () =>{
@@ -61,20 +61,10 @@ const Banner = ({backgroundDay, children}) => {
       transition={{ duration: 1}}
       exitBeforeEnter
       className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px]" >
-        {
-          backgroundDay? <div
+        <div
           className="flex flex-row" ref={slideshow}>
         {children}
-        </div> : <div
-        className="flex flex-row fade-out" ref={slideshow}>
-        <img className="object-cover " src="./images/calle/fondo2.jpg" alt=""   />
-        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
-        <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
-        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
-        <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
-        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         </div>
-        }
       </motion.div>
   )
 }
