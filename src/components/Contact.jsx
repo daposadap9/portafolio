@@ -13,6 +13,7 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
     e.preventDefault()
+    }
 
     useEffect(() => {
         const anim6 = lottie.loadAnimation({
@@ -42,8 +43,6 @@ const Contact = () => {
           anim8.destroy();
         };
       }, []);
-
-  }
   return (
     <div className="
       pb-10
