@@ -8,7 +8,7 @@ const Banner = ({backgroundDay}) => {
     const Siguiente = () =>{
             //Se comprueba que el slideshow contenga elementos
         try{
-            if(slideshow && slideshow.current.children.length > 0){
+            if(slideshow.current && slideshow.current.children && slideshow.current.children.length > 0){
             //Obtenemos el primer valor del slideshow
             const primerElemento = slideshow.current.children[0];
             //Esta es la transicion a la que se accede en el elemento slideshow

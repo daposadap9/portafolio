@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { motion } from "framer-motion";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Banner from "../../components/Banner";
+import Banner from "../../components/Banner/Banner";
 
 function Home() {
   useEffect(()=>{
