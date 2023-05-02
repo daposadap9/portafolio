@@ -26,7 +26,7 @@ const Projects = () => {
       tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden
      "
     ><b><h1
-    className="sombras text-violetClaro text-center mt-5
+    className="sombras text-center font-dashiellText italic font-black text-white mt-5
     first:text-2xl
     midMobile:text-3xl
     tablet:text-4xl"

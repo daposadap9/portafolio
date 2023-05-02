@@ -118,13 +118,15 @@ function Home() {
         <div>
           <b>
             <h1 data-aos="fade-left"
-              className="sombras text-center
+              className="sombras text-center font-dashiellText italic font-black text-white
             first:text-2xl
             midMobile:text-3xl
             tablet:text-4xl"
             >
               {saludo}
             </h1>
+            <div className="gradient"></div>
+            <div className="spotlight"></div>
           </b>
         </div>
       </section>

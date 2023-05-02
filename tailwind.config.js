@@ -42,6 +42,7 @@ export default {
     extend: {
       fontFamily: {
         Lato: ["Lato", "sans-serif"],
+        dashiellText: ['"dashiell-text"', 'serif']
       },
       gridTemplateColumns: {
         two: "auto auto",
