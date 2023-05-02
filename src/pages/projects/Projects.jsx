@@ -32,7 +32,9 @@ const Projects = () => {
     tablet:text-4xl"
     >My Projects</h1></b>
     <section className="pt-10 flex justify-center">
-        <button className="text-gray px-4 border-2 border-grayOscuro text-xl rounded-md absolute bg-violet hover:bg-gray60 hover:text-white" id="myButton">View my projects<FontAwesomeIcon className='ml-3 stroke' icon={faArrowCircleRight} color='#000'/></button>
+        <button className="text-gray px-4 border-2 border-grayOscuro text-xl rounded-md absolute bg-violet hover:bg-gray60 
+        hover:text-white" id="myButton">View my projects<FontAwesomeIcon className='ml-3 stroke' icon={faArrowCircleRight} color='#000'/>
+        </button>
       </section>
     <div className='mt-6'>
       <Animation/>

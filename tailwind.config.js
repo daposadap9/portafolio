@@ -37,7 +37,8 @@ export default {
       morado: "#2A2F4F",
       morado2: "#2a2f4fe3",
       transparent: "rgba(255, 255, 255, 0)",
-      violetClaro:"rgb(193, 110, 238)"
+      violetClaro:"rgb(193, 110, 238)",
+      carton:"#fff1e6"
     },
     extend: {
       fontFamily: {

@@ -132,7 +132,7 @@ function Home() {
       </section>
       <section className="flex justify-center">
         <button className="text-gray text-xl px-4 border-2 border-grayOscuro rounded-md bg-violet hover:bg-gray60 hover:text-white" id="myButton"  onClick={changeBackground}>{backgroundDay?
-        <FontAwesomeIcon
+        <FontAwesomeIcon 
         icon={faSun} style={{color: "#ffdd00",}} />:
         <FontAwesomeIcon
         icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Cambiar fondo</button>
@@ -167,14 +167,14 @@ function Home() {
         </p>
         <button className="text-white boton"><a href="#textHome">click here</a></button>
       </section>
-      <section className="bg-grayOscuro  mt-6 rounded-xl w-5/6 flex flex-col m-auto p-3
+      <section className="mt-6 rounded-xl w-5/6 flex flex-col m-auto p-3 bg-[#3a2f634f] shadow-2xl
       miniMobile:p-4
       mobile:p-6
       midMobile:p-8
       miniTablet:p-9 miniTablet:w-8/12
       tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
       " id="Cards" >
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -186,7 +186,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -198,7 +198,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -210,7 +210,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="text-white mt-3 bg-gray z-10
+        <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
