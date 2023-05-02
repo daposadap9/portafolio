@@ -2,6 +2,10 @@
     background: linear-gradient(to bottom right, #2a2f4f, #01000c);
     background-size: cover;
   }
+  .stroke{
+    -webkit-text-stroke: 1px #000000;
+    text-stroke: 1px #000000;
+  }
   .sombras{
     text-shadow: 1px 1px 10px rgb(77, 9, 129);
   }
