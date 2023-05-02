@@ -118,7 +118,7 @@ function Home() {
         <div>
           <b>
             <h1 data-aos="fade-left"
-              className="sombras text-violetClaro text-center
+              className="sombras text-center
             first:text-2xl
             midMobile:text-3xl
             tablet:text-4xl"
