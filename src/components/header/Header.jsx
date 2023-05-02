@@ -7,7 +7,7 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header
-      className="list-none bg-circle-gradient opacity-90 text-white h-14 flex justify-evenly items-center px-3 py-4 rounded-md shadow-md overflow-hidden
+      className="list-none bg-[#34305f] opacity-90 text-white h-14 flex justify-evenly items-center px-3 py-4 rounded-md shadow-md overflow-hidden
     "
     >
       <div className="flex justify-center items-center gap-4">
