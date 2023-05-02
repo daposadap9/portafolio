@@ -16,8 +16,7 @@ const Animation = () => {
           anim.destroy();
         };
       }, []);
-  return (
-    <section
+      return (<section
         ref={containerAnimation}
         id="animation"
         className="items-center z-20 m-auto pt-44 scale-x-[-1]

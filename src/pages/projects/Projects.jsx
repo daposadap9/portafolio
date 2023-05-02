@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from '../../components/Banner/Banner'
 import { motion } from "framer-motion";
 import Animation from '../../components/Animation';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
   return (
@@ -29,7 +31,10 @@ const Projects = () => {
     midMobile:text-3xl
     tablet:text-4xl"
     >My Projects</h1></b>
-    <div className='mt-16'>
+    <section className="pt-10 flex justify-center">
+        <button className="text-gray px-4 border-2 border-grayOscuro text-xl rounded-md absolute bg-violet hover:bg-gray60 hover:text-white" id="myButton">View my projects<FontAwesomeIcon className='ml-3' icon={faArrowCircleRight} color='#fff'/></button>
+      </section>
+    <div className='mt-6'>
       <Animation/>
       </div>
     </motion.div>

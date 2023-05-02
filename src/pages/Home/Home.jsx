@@ -129,7 +129,7 @@ function Home() {
         </div>
       </section>
       <section className="flex justify-center">
-        <button className="text-gray px-4 border-2 border-grayOscuro rounded-md bg-violet" id="myButton"  onClick={changeBackground}>{backgroundDay?
+        <button className="text-gray text-xl px-4 border-2 border-grayOscuro rounded-md bg-violet hover:bg-gray60 hover:text-white" id="myButton"  onClick={changeBackground}>{backgroundDay?
         <FontAwesomeIcon
         icon={faSun} style={{color: "#ffdd00",}} />:
         <FontAwesomeIcon

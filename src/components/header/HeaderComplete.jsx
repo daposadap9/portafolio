@@ -17,7 +17,7 @@ const HeaderComplete = ({width}) => {
      transition={{ duration: 1}}
      
      className="top-0 z-50 sticky">
-        {width >= 640 ? (
+        {width >= 734 ? (
           <Header />
         ) : (
           <HeaderMobile handleActive={handleActive} isOpen={isOpen} />

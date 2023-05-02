@@ -54,14 +54,15 @@ const Contact = () => {
       midTablet:absolute
       midTablet:left-0 p-5
       midTablet:bg-circle-gradient
-      laptop:justify-center
       ">
         <section id="contact" className="desktop:w-3/5 midDesktop:w-5/12">
           <div className="rounded-2xl bg-circle-gradient text-white overflow-hidden
         midTablet:bg-circle-gradient2
         midTablet:translate-x-[-30px]
         midTablet:z-[-10]
-        midTablet:w-full"
+        midTablet:w-full
+        max-w-3xl
+        "
           >
             <b><h1 className="text-center pt-6 text-violet text-2xl mb-4 overflow-hidden">Contact me</h1></b>
             <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black items-center
@@ -124,7 +125,7 @@ const Contact = () => {
             <li><a href=""><span className="w-12 block" ref={containerAnimation7}></span></a></li>
           </ul>
         </section>
-      </div>
+        </div>
   )
 }
 
