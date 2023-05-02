@@ -144,10 +144,13 @@ function Home() {
           src="/images/ellipse/Ellipse-1.png"
         />
       </section> */}
-      <Animation/>
+      <div className="mobile:mt-5 miniTablet:translate-y-[-20px] miniTablet:mt-0 ">
+        <Animation />
+      </div>
+      
 
       <section data-aos="fade-down" data-aos-once="true" id="textHome">
-        <div className="flex justify-center items-center m-4 text-center">
+        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center">
           <b>
             <h1 className="text-violet text-4xl">Hi!</h1>
           </b>
