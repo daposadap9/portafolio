@@ -3,12 +3,10 @@
     background-size: cover;
   }
   .sombras{
-    background: linear-gradient(to right, #000000, #ffffff);
+    background: linear-gradient(90deg, #E81E65ff, #DB297Bff, #CE3391ff, #C13EA7ff, #B348BCff, #A653D2ff, #995DE8ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px #340d9c;
-    text-shadow: 1px 1px 5px rgb(162, 190, 243);
-    letter-spacing: 2px;
+    -webkit-text-stroke: 1px #020000;
     font-weight: 900;
   }
   .sombras2{
