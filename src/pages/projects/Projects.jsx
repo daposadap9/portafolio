@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Animation from '../../components/Animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
-import TransitionEffect from '../../components/transitionEffect';
+import TransitionEffect from '../../components/transition/TransitionEffect';
 
 const Projects = () => {
   return (

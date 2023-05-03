@@ -13,7 +13,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Banner from "../../components/Banner/Banner";
 import Animation from "../../components/Animation";
-import TransitionEffect from "../../components/transitionEffect";
+import TransitionEffect from "../../components/transition/TransitionEffect";
 
 function Home() {
   useEffect(()=>{
