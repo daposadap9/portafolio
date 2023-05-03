@@ -132,10 +132,10 @@ function Home() {
         </div>
       </section>
       <section className="flex justify-center">
-        <button className="text-gray text-xl px-4 border-2 border-grayOscuro rounded-md bg-violet hover:bg-gray60 hover:text-white" id="myButton"  onClick={changeBackground}>{backgroundDay?
-        <FontAwesomeIcon 
+        <button className="text-gray text-xl px-4  py-2 border-2 border-grayOscuro rounded-md bg-violet hover:bg-gray60 hover:text-white z-[9]" id="myButton"  onClick={changeBackground}>{backgroundDay?
+        <FontAwesomeIcon className="px-0 py-0" id="myButton" 
         icon={faSun} style={{color: "#ffdd00",}} />:
-        <FontAwesomeIcon
+        <FontAwesomeIcon id="myButton"
         icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Cambiar fondo</button>
       </section>
       {/* <section id="" className="fixed top-9 first:left-28">
