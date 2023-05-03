@@ -17,7 +17,7 @@ const Nav = ({ handleActive }) => {
         animate={{ x: 0 }}
         transition={{ duration: 0.6}}
         className="px-4 py-2 border-b-2 border-white sombras2">
-          <Link to="/">
+          <Link onClick={handleActive} to="/">
             <h1>Home</h1>
           </Link>
         </motion.li>
@@ -26,7 +26,7 @@ const Nav = ({ handleActive }) => {
         animate={{ x: 0 }}
         transition={{ duration: 0.8}}
         className="px-4 py-2 border-b-2 border-white sombras2">
-          <Link to="/projects">
+          <Link onClick={handleActive} to="/projects">
             <h1>Projects</h1>
           </Link>
         </motion.li>

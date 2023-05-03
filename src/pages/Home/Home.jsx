@@ -13,6 +13,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Banner from "../../components/Banner/Banner";
 import Animation from "../../components/Animation";
+import TransitionEffect from "../../components/transitionEffect";
 
 function Home() {
   useEffect(()=>{
@@ -100,7 +101,7 @@ function Home() {
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
       </Banner>
      }
-    
+    <TransitionEffect/>
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}

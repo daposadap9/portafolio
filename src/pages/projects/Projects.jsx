@@ -3,11 +3,13 @@ import Banner from '../../components/Banner/Banner'
 import { motion } from "framer-motion";
 import Animation from '../../components/Animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import TransitionEffect from '../../components/transitionEffect';
 
 const Projects = () => {
   return (
   <>
+  <TransitionEffect/>
     <Banner>
       <img className="object-cover " src="./images/calle/desierto.jpeg" alt=""  />
       <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
