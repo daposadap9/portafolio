@@ -5,6 +5,7 @@ import Projects from "./pages/projects/Projects"
 import HeaderComplete from "./components/header/HeaderComplete";
 import { useEffect, useRef, useState } from "react";
 import Contact from "./components/Contact";
+import { AnimatePresence } from "framer-motion";
 
 
 function App() {
@@ -28,7 +29,6 @@ function App() {
 
   return (
     <div ref={containerWidth}>
-    
     <HeaderComplete width={width}/>
     <Routes>
     <Route path="/" element={<Home/>}/>

@@ -58,7 +58,7 @@ const Banner = ({children}) => {
     <motion.div
       initial={{opacity:0}}
       animate={{opacity:1}}
-      transition={{ duration: 1}}
+      transition={{ duration: 2}}
       exitBeforeEnter
       className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px]" >
         <div

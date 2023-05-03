@@ -106,7 +106,7 @@ const Contact = () => {
           </div>
         </section>
         <section className="colorear text-white mt-10 mx-2 rounded-2xl p-5 
-      tablet:h-2/4 z-10">
+      tablet:h-2/4 z-[9]">
           <b><h1 className="text-center text-violet text-2xl overflow-hidden">Contact information</h1></b>
           <ul className="list-none mt-5 mb-10 text-sm overflow-hidden">
             <li className="flex flex-wrap mt-5"><span className="mr-4"><FontAwesomeIcon icon={faLocationDot} /></span><h1>Calle 35 #54-22, Bello obrero</h1></li>

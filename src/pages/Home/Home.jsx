@@ -8,7 +8,7 @@ import react from "../../assets/react.json"
 import { saludo } from "../../js/variableConmutada";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Banner from "../../components/Banner/Banner";
@@ -101,7 +101,7 @@ function Home() {
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
       </Banner>
      }
-    <TransitionEffect/>
+     <AnimatePresence mode="wait"><TransitionEffect/></AnimatePresence>
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}

@@ -19,7 +19,7 @@ const Projects = () => {
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
-    transition={{ duration: 1}}
+    transition={{ duration: 2}}
       className="App m-auto h-full pl-4 pr-4 pb-4
       miniMobile:max-w-screen-miniMobile miniMobile:bg-transparent
       mobile:max-w-screen-mobile mobile:bg-transparent
@@ -27,7 +27,7 @@ const Projects = () => {
       miniTablet:max-w-screen-miniTablet miniTablet:bg-transparent
       tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden
      "
-    ><b><h1
+    ><b><h1 data-aos="fade-left" data-aos-once="true"
     className="sombras text-center font-dashiellText italic font-black text-white mt-5
     first:text-2xl
     midMobile:text-3xl
