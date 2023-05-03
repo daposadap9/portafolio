@@ -25,7 +25,7 @@ const Banner = ({children}) => {
             slideshow.current.appendChild(primerElemento);
             slideshow.current.removeEventListener('transitionend', transicion)
             }
-            //EventListener para cuando termina la transicion.
+            //EventListener para cuando termina la transicion
             slideshow.current.addEventListener('transitionend', transicion);
         }
         }
