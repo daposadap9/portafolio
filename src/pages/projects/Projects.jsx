@@ -9,13 +9,13 @@ import TransitionEffect from '../../components/transitionEffect';
 const Projects = () => {
   return (
   <>
-  <TransitionEffect/>
     <Banner>
       <img className="object-cover " src="./images/calle/desierto.jpeg" alt=""  />
       <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
       <img className="object-cover" src="./images/calle/desierto.jpeg" alt="" />
       <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
     </Banner>
+    <TransitionEffect/>
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
