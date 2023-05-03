@@ -47,9 +47,9 @@ const Header = () => {
         </ul>
       </nav>
       <nav className="flex midDesktop:bg-transparent midDesktop:static justify-center gap-5">
-        <li><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[17%] text-2xl neon rounded-md" icon={faInstagram}/></li>
-        <li><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[23%] text-2xl neon rounded-md" icon={faLinkedin}/></li>
-        <li><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[20%] text-2xl neon rounded-xl" icon={faFacebook}/></li>
+        <li><FontAwesomeIcon beat className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[17%] text-2xl rounded-md" icon={faInstagram}/></li>
+        <li><FontAwesomeIcon beat className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[23%] text-2xl rounded-md" icon={faLinkedin}/></li>
+        <li><FontAwesomeIcon beat className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[20%] text-2xl rounded-xl" icon={faFacebook}/></li>
       </nav>
     </header>
   );

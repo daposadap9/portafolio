@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link, } from "react-router-dom";
+import { faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Nav = ({ handleActive }) => {
   return (
@@ -50,9 +52,9 @@ const Nav = ({ handleActive }) => {
         </motion.li>
       </ul>
       </b>
-      <div className="absolute w-10 right-3 top-2 text-white">
-        <button onClick={handleActive}>
-          <img src="/images/cerrar.png" alt="" />
+      <div className="absolute w-10 right-3 top-2 text-white ">
+        <button className="z-[9]" onClick={handleActive}>
+        <FontAwesomeIcon size="2x" icon={faRectangleXmark} bounce style={{color: "#c82f09",}} />
         </button>
       </div>
     </motion.nav>
