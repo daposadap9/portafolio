@@ -54,7 +54,7 @@ const Nav = ({ handleActive }) => {
       </b>
       <div className="absolute w-10 right-3 top-2 text-white ">
         <button className="z-[9]" onClick={handleActive}>
-        <FontAwesomeIcon size="2x" icon={faRectangleXmark} bounce style={{color: "#c82f09",}} />
+        <FontAwesomeIcon size="2x" icon={faRectangleXmark} style={{color: "#c82f09",}} />
         </button>
       </div>
     </motion.nav>
