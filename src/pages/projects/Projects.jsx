@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Animation from '../../components/Animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
-import TransitionEffect from '../../components/transitionEffect';
 
 const Projects = () => {
   return (
@@ -15,7 +14,6 @@ const Projects = () => {
       <img className="object-cover" src="./images/calle/desierto.jpeg" alt="" />
       <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
     </Banner>
-    <TransitionEffect/>
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
