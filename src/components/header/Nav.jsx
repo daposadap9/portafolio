@@ -32,6 +32,13 @@ const Nav = ({ handleActive }) => {
       transition={{ duration: 0.7}}
       className="absolute w-full h-screen top-0 bg-[#C6C8EE] backdrop-blur-15 z-10 overflow-hidden"
       >
+        <motion.div
+        initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1}}
+        className="text-center mb-4 mt-4 px-12 mx-2">
+        <b><p>Follow us on our social media</p></b>
+        </motion.div>
       <b>
       <ul className="flex flex-col justify-center items-center gap-6 h-screen text-2xl font-dashiellText italic font-black first:text-2xl
             midMobile:text-3xl
