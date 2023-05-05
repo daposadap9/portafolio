@@ -15,6 +15,12 @@ const Projects = () => {
       <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
       <img className="object-cover" src="./images/calle/desierto.jpeg" alt="" />
       <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
+      <img className="object-cover " src="./images/calle/desierto.jpeg" alt=""  />
+      <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
+      <img className="object-cover" src="./images/calle/desierto.jpeg" alt="" />
+      <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
+      <img className="object-cover " src="./images/calle/desierto.jpeg" alt=""  />
+      <img className="object-cover scale-x-[-1]" src="./images/calle/desierto.jpeg" alt="" />
     </Banner>
     <motion.div
     initial={{opacity:0}}
@@ -27,7 +33,7 @@ const Projects = () => {
       miniTablet:max-w-screen-miniTablet miniTablet:bg-transparent
       tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden
      "
-    ><b><h1 data-aos="fade-left" data-aos-once="true"
+    ><b><h1
     className="sombras text-center font-dashiellText italic font-black text-white mt-5
     first:text-2xl
     midMobile:text-3xl

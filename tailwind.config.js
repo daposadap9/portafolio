@@ -13,16 +13,21 @@ export default {
       midMobile: "400px",
       // => @media (min-width: 400px) { ... }
       miniTablet: "520px",
-      // => @media (min-width: 640px) { ... }
+      // => @media (min-width: 520px) { ... }
       tablet: "640px",
       // => @media (min-width: 640px) { ... }
       midTablet:"734px",
-      // => @media (min-width: 710px) { ... }
+      // => @media (min-width: 734px) { ... }
       laptop: "1010px",
-      // => @media (min-width: 1024px) { ... }
+      // => @media (min-width: 1010px) { ... }
       desktop: "1117px",
-      // => @media (min-width: 1280px) { ... }
-      midDesktop:"1428px"
+      // => @media (min-width: 1117px) { ... }
+      midDesktop:"1428px",
+      // => @media (min-width: 1428px) { ... }
+      tv:"2098px",
+      // => @media (min-width: 2098px) { ... }
+      midtv:"3162px",
+      // => @media (min-width: 3162px) { ... }
     },
     colors: {
       violet: "#9BA4ED",

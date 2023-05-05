@@ -90,7 +90,8 @@ function Home() {
           <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
           <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
           <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
-      <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+          <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
+          <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
       </Banner> : 
       <Banner backgroundDay={backgroundDay}>
       <img className="object-cover " src="./images/calle/fondo2.jpg" alt=""   />
@@ -99,9 +100,10 @@ function Home() {
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
+        <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
       </Banner>
      }
-     <AnimatePresence mode="wait"><TransitionEffect/></AnimatePresence>
+     <TransitionEffect/>
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
@@ -118,7 +120,7 @@ function Home() {
       <section className="m-4">
         <div>
           <b>
-            <h1 data-aos="fade-left"
+            <h1 data-aos="fade-left" data-aos-once="true" 
               className="sombras text-center font-dashiellText italic font-black text-white
             first:text-2xl
             midMobile:text-3xl

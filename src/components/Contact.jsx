@@ -54,6 +54,7 @@ const Contact = () => {
       midTablet:absolute
       midTablet:left-0 p-5
       midTablet:bg-circle-gradient
+      tv:px-[300px] midtv:px-[800px] midtv:w-screen
       ">
         <section id="contact" className="desktop:w-3/5 midDesktop:w-5/12">
           <div className="rounded-2xl bg-circle-gradient text-white overflow-hidden
@@ -61,7 +62,8 @@ const Contact = () => {
         midTablet:translate-x-[-30px]
         midTablet:z-[-10]
         midTablet:w-full
-        max-w-3xl
+        max-w-3xl mr-auto
+        midtv:mx-auto
         "
           >
             <b><h1 className="text-center pt-6 text-violet text-2xl mb-4 overflow-hidden">Contact me</h1></b>
@@ -106,14 +108,14 @@ const Contact = () => {
           </div>
         </section>
         <section className="colorear text-white mt-10 mx-2 rounded-2xl p-5 
-      tablet:h-2/4 z-[9]">
+      tablet:h-2/4 z-[9] midtv:absolute midtv:mr-[1100px]">
           <b><h1 className="text-center text-violet text-2xl overflow-hidden">Contact information</h1></b>
-          <ul className="list-none mt-5 mb-10 text-sm overflow-hidden">
+          <ul className="list-none mt-5 mb-10 text-sm overflow-hidden midtv:mb-4">
             <li className="flex flex-wrap mt-5"><span className="mr-4"><FontAwesomeIcon icon={faLocationDot} /></span><h1>Calle 35 #54-22, Bello obrero</h1></li>
             <li className="flex flex-wrap mt-5" ><span className="mr-4"><FontAwesomeIcon className='ul__icon' icon={faEnvelope} /></span><h1>diegoposada1999@gmail.com</h1></li>
             <li className="flex flex-wrap mt-5"><span className="mr-4"><FontAwesomeIcon className='ul__icon' icon={faPhone} /></span><h1>3207689885</h1></li>
           </ul>
-          <ul className="flex 
+          <ul className="flex
           justify-around
           miniTablet:justify-center
           miniTablet:gap-10

@@ -1,4 +1,4 @@
-import { Route, Routes, unstable_HistoryRouter} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home/Home";
 import Projects from "./pages/projects/Projects"

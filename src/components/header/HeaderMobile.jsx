@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 
 const HeaderMobile = ({ handleActive, isOpen }) => {
   return (
@@ -20,7 +20,8 @@ const HeaderMobile = ({ handleActive, isOpen }) => {
               <option className="bg-morado" value="">Español</option>
             </select>
             <button onClick={handleActive}>
-              <img srcSet="/images/menuHamburguesa.png" alt="" />
+              {isOpen?<FontAwesomeIcon size="xl" icon={faRectangleXmark} style={{color: "#c82f09",}} />: <img srcSet="/images/menuHamburguesa.png" alt="" />}
+              
             </button>
       </li>
     </div>
