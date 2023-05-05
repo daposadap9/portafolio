@@ -5,7 +5,6 @@ import Projects from "./pages/projects/Projects"
 import HeaderComplete from "./components/header/HeaderComplete";
 import { useEffect, useRef, useState } from "react";
 import Contact from "./components/Contact";
-import { AnimatePresence } from "framer-motion";
 
 
 function App() {

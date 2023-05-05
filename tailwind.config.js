@@ -38,7 +38,8 @@ export default {
       morado2: "#2a2f4fe3",
       transparent: "rgba(255, 255, 255, 0)",
       violetClaro:"rgb(193, 110, 238)",
-      carton:"#fff1e6"
+      carton:"#fff1e6",
+      carton2:"#EADEDA"
     },
     extend: {
       fontFamily: {
@@ -50,7 +51,7 @@ export default {
       },
       backgroundImage: {
         'circle-gradient': 'radial-gradient(ellipse at center bottom, rgba(42,47,79,1) 44%, rgba(1,0,12,1) 100%)',
-        'circle-gradient2': 'radial-gradient(ellipse at center bottom, rgba(21, 17, 41) 44%, rgba(1,0,12,1) 100%)'
+        'circle-gradient2': 'radial-gradient(ellipse at center bottom, rgba(21, 17, 41) 44%, rgba(1,0,12,1) 100%)',
       },
     },
   },

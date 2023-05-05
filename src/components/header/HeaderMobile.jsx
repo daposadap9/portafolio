@@ -5,8 +5,9 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 const HeaderMobile = ({ handleActive, isOpen }) => {
   return (
+  <>
     <div
-      className="bg-[#34305f] opacity-90 text-white h-14 w-full flex justify-around items-center shadow-md rounded-md
+      className="bg-[#34305f] text-white opacity-90 h-14 w-full flex justify-around items-center shadow-md rounded-md
     "
     >
       <li className="px-2 py-2 list-none">
@@ -22,9 +23,9 @@ const HeaderMobile = ({ handleActive, isOpen }) => {
               <img srcSet="/images/menuHamburguesa.png" alt="" />
             </button>
       </li>
-      
-      {isOpen && <Nav className="z-10" handleActive={handleActive} />}
     </div>
+      {isOpen && <Nav className="z-10" handleActive={handleActive} />}
+    </>
   );
 };
 
