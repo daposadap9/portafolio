@@ -30,10 +30,10 @@ const Nav = ({ handleActive }) => {
       initial={{ width: 0 }}
       animate={{ width: "100vw" }}
       transition={{ duration: 0.7}}
-      className="absolute w-full h-screen top-0 bg-[#C6C8EE] backdrop-blur-15 z-10"
+      className="absolute w-full h-screen top-0 bg-[#C6C8EE] backdrop-blur-15 z-10 overflow-hidden"
       >
       <b>
-      <ul className="flex flex-col justify-center items-center h-screen gap-16 text-2xl font-dashiellText italic font-black first:text-2xl
+      <ul className="flex flex-col justify-center items-center gap-6 h-screen text-2xl font-dashiellText italic font-black first:text-2xl
             midMobile:text-3xl
             tablet:text-4xl translate-y-[-40px]">
         <motion.li
@@ -79,30 +79,35 @@ const Nav = ({ handleActive }) => {
             <h1>Contact me</h1>
           </a>
         </motion.li>
-        <motion.div className="absolute z-20 flex w-screen first:justify-around  midMobile:justify-evenly px-20 top-12 text-gray">
+        <motion.div className="absolute z-20 flex w-screen first:justify-around  midMobile:justify-evenly px-20 top-12 text-gray"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2}}>
         <li><FontAwesomeIcon icon={faInstagram}/></li>
         <li><FontAwesomeIcon icon={faLinkedin}/></li>
         <li><FontAwesomeIcon icon={faFacebook}/></li>
       </motion.div>
       </ul>
       </b>
-      <div className="absolute w-10 z-30 right-3 top-2 text-white flex flex-row">
+      <motion.div
+      
+      className="absolute w-10 z-30 right-3 top-2 text-white flex flex-row">
         <button className="z-[9]" onClick={handleActive}>
         <FontAwesomeIcon size="2x" icon={faRectangleXmark} style={{color: "#c82f09",}} />
         </button>
-      </div>
+      </motion.div>
       <div className="burbujas">
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-        </div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      <div className="burbuja"></div>
+      </div>
     </motion.nav>
 </>
   );
