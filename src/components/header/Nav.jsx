@@ -42,7 +42,7 @@ const Nav = ({ handleActive }) => {
       <b>
       <ul className="flex flex-col justify-center items-center gap-6 h-screen text-2xl font-dashiellText italic font-black first:text-2xl
             midMobile:text-3xl
-            tablet:text-4xl translate-y-[-40px]">
+            tablet:text-4xl translate-y-[-70px]">
         <motion.li
         initial={{ x: -1000 }}
         animate={{ x: 0 }}
@@ -86,13 +86,18 @@ const Nav = ({ handleActive }) => {
             <h1>Contact me</h1>
           </a>
         </motion.li>
-        <motion.div className="absolute z-20 flex w-screen first:justify-around  midMobile:justify-evenly px-20 top-12 text-gray"
+        <motion.div className="absolute z-20 flex w-screen first:justify-around  midMobile:justify-evenly px-20 top-16 text-gray"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2}}>
         <li><FontAwesomeIcon icon={faInstagram}/></li>
         <li><FontAwesomeIcon icon={faLinkedin}/></li>
         <li><FontAwesomeIcon icon={faFacebook}/></li>
+      </motion.div>
+      <motion.div initial={{ x: -1000 }}
+        animate={{ x: 0 }}
+        transition={{ duration: 1.3}}
+      className="text-center relative text-xl px-5"><b><p className="text-gray">hecho con ❤️ en academlo</p></b>
       </motion.div>
       </ul>
       </b>
