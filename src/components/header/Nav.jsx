@@ -97,7 +97,7 @@ const Nav = ({ handleActive }) => {
       <motion.div initial={{ x: -1000 }}
         animate={{ x: 0 }}
         transition={{ duration: 1.3}}
-      className="text-center relative text-xl px-5"><b><p className="text-gray">hecho con ❤️ en academlo</p></b>
+      className="text-center relative text-xl px-5"><b><p className="text-gray">Made with ❤️ at Academlo</p></b>
       </motion.div>
       </ul>
       </b>
