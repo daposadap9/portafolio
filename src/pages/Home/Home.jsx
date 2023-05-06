@@ -7,13 +7,14 @@ import js from "../../assets/js.json"
 import react from "../../assets/react.json"
 import { saludo } from "../../js/variableConmutada";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { AnimatePresence, motion } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Banner from "../../components/Banner/Banner";
 import Animation from "../../components/Animation";
 import TransitionEffect from "../../components/transition/TransitionEffect";
+import { motion } from "framer-motion";
+
 
 function Home() {
   useEffect(()=>{
@@ -83,7 +84,7 @@ function Home() {
      */
      <>
      {
-      backgroundDay ? 
+      backgroundDay ?
       <Banner backgroundDay={backgroundDay}>
       <img className="object-cover " src="./images/calle/fondo.jpg" alt=""  />
           <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
@@ -177,7 +178,7 @@ function Home() {
       miniTablet:p-9 miniTablet:w-8/12
       tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
       " id="Cards" >
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -189,7 +190,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -201,7 +202,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -213,7 +214,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton z-10
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14

@@ -1,15 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { motion } from "framer-motion";
 import Header from './Header';
 import HeaderMobile from './HeaderMobile';
+import UseActivate from '../../js/hooks/UseActivate';
 
 const HeaderComplete = ({width}) => {
 
-  const [isOpen, setisOpen] = useState(false);
+  const {handleActive, isOpen} = UseActivate()
 
-  const handleActive = () => {
-    setisOpen(!isOpen);
-  };
   return (
     <motion.section 
      initial={{opacity:0}}
@@ -26,4 +24,4 @@ const HeaderComplete = ({width}) => {
   )
 }
 
-export default HeaderComplete
+export default HeaderComplete;

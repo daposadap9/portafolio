@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 
 const Banner = ({children}) => {
+
     const slideshow = useRef(null);
     const intervaloSlideshow = useRef(null);
     const Siguiente = () =>{
@@ -61,10 +62,11 @@ const Banner = ({children}) => {
       transition={{ duration: 2}}
       exitBeforeEnter
       className="absolute w-full top-13 z-[-5] flex justify-center rounded-lg overflow-hidden h-[480px]" >
-        <div
-          className="flex flex-row" ref={slideshow}>
+        <div className="flex flex-row" ref={slideshow}>
         {children}
-        </div>
+        </div>:""
+        
+        
       </motion.div>
   )
 }
