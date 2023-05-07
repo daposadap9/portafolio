@@ -150,10 +150,10 @@ function Home() {
           src="/images/ellipse/Ellipse-1.png"
         />
       </section> */}
-      <div className="mobile:mt-5 miniTablet:translate-y-[-20px] miniMobile:translate-y-[-20px] mobile:translate-y-[0px] miniTablet:mt-0 ">
+      <div className="mobile:mt-5 miniTablet:translate-y-[-20px] miniMobile:translate-y-[-20px] first:translate-y-[-20px] mobile:translate-y-[0px] miniTablet:mt-0 ">
         <Animation />
       </div>
-      
+    
 
       <section data-aos="fade-down" data-aos-once="true" id="textHome">
         <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center">
