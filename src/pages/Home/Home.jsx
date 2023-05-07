@@ -93,6 +93,7 @@ function Home() {
           <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
           <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
           <img className="object-cover" src="./images/calle/fondo.jpg" alt="" />
+          <img className="scale-x-[-1] object-cover" src="./images/calle/fondo.jpg" alt="" />
       </Banner> : 
       <Banner backgroundDay={backgroundDay}>
       <img className="object-cover " src="./images/calle/fondo2.jpg" alt=""   />
@@ -102,6 +103,7 @@ function Home() {
         <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
         <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
         <img className="object-cover " src="./images/calle/fondo2.jpg"  alt="" />
+        <img className="scale-x-[-1] object-cover" src="./images/calle/fondo2.jpg" alt=""  />
       </Banner>
      }
      <TransitionEffect/>
@@ -148,7 +150,7 @@ function Home() {
           src="/images/ellipse/Ellipse-1.png"
         />
       </section> */}
-      <div className="mobile:mt-5 miniTablet:translate-y-[-20px] miniTablet:mt-0 ">
+      <div className="mobile:mt-5 miniTablet:translate-y-[-20px] miniMobile:translate-y-[-20px] mobile:translate-y-[0px] miniTablet:mt-0 ">
         <Animation />
       </div>
       

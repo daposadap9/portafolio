@@ -81,7 +81,7 @@ const Nav = ({ handleActive }) => {
         animate={{ x: 0 }}
         transition={{ duration: 0.8}}
         className=" sombras text-white shadow-xl w-full overflow-hidden">
-          <NavLink className="bg-[#C6C8EE] flex flex-row gap-2 justify-center items-center py-1 hover:bg-morado" onClick={handleActive} to="/">
+          <NavLink className={({isActive}) => isActive?"bg-morado flex flex-row gap-2 justify-center items-center py-1":"bg-[#C6C8EE] flex flex-row gap-2 justify-center items-center py-1 hover:bg-morado"} onClick={handleActive} to="/about">
           <FontAwesomeIcon icon={faUser}/><h1>About me</h1>
           </NavLink>
         </motion.li>

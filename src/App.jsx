@@ -5,6 +5,7 @@ import Projects from "./pages/projects/Projects"
 import HeaderComplete from "./components/header/HeaderComplete";
 import { useEffect, useRef, useState } from "react";
 import Contact from "./components/Contact";
+import About from "./pages/About/About";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <Routes>
     <Route path="/" element={<Home/>}/>
     <Route path="/projects" element={<Projects/>}/>
+    <Route path="/about" element={<About/>}/>
     </Routes>
     <Contact />
     </div>

@@ -27,11 +27,9 @@ const Header = () => {
             <NavLink className={({isActive})=>isActive ? "px-2 py-1 rounded-md bg-white text-gray50":"px-2 py-1 rounded-md  hover:bg-white hover:text-gray50"} to="/projects">
               <h1>Projects</h1>
             </NavLink>
-          <li className="px-2 py-1">
-            <a href="">
+          <NavLink className={({isActive})=>isActive ? "px-2 py-1 rounded-md bg-white text-gray50":"px-2 py-1 rounded-md  hover:bg-white hover:text-gray50"} to="/about">
               <h1>About me</h1>
-            </a>
-          </li>
+          </NavLink>
           <li className="px-2 py-2">
             <a href="">
               <h1>Contact me</h1>
