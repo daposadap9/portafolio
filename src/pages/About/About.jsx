@@ -60,10 +60,10 @@ const About = () => {
         hover:text-white z-[9]" id="myButton">Click me<FontAwesomeIcon className='ml-3 stroke' icon={faArrowCircleRight} color='#000'/>
         </button>
       </section>
-    <div className='relative flex flex-row first:mt-12 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
+    <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
     miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-28'>
       <Animation/>
-      <div className='absolute miniTablet:translate-x-[-230px] miniTablet:w-[800px] first:w-[600px] first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3  scale-x-[-1] hidden first:block' ref={containerAnimation}></div>
+      <div className='absolute miniTablet:translate-x-[-230px] miniTablet:w-[800px] first:w-[600px] first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px]  scale-x-[-1] hidden first:block' ref={containerAnimation}></div>
       </div>
     </motion.div>
     </>
