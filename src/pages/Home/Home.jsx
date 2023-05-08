@@ -180,7 +180,7 @@ function Home() {
       miniTablet:p-9 miniTablet:w-8/12
       tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
       " id="Cards" >
-        <div className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -192,7 +192,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -204,7 +204,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14
@@ -216,7 +216,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
-        <div className="text-gray mt-3 bg-carton z-10
+        <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
         midMobile:p-14

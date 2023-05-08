@@ -5,6 +5,7 @@ import Animation from '../../components/Animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import TransitionEffect from '../../components/transition/TransitionEffect';
+import Cards from '../../components/cards';
 
 const Projects = () => {
   return (
@@ -47,7 +48,42 @@ const Projects = () => {
     <div className='mt-6'>
       <Animation/>
       </div>
+      
     </motion.div>
+    <div className='w-full flex items-center justify-center relative text-white bg-transparent '>
+    <div className='grid midMobile:grid-cols-2 tablet:grid-cols-3 midTablet:grid-cols-4 gap-4 p-3'>
+    <Cards 
+    title={"Mi titulo"}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    url={"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}>
+    </Cards>
+    <Cards 
+    title={"Mi titulo"}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    url={"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}>
+    </Cards>
+    <Cards 
+    title={"Mi titulo"}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    url={"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}>
+    </Cards>
+    <Cards 
+    title={"Mi titulo"}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    url={"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}>
+    </Cards>
+    <Cards 
+    title={"Mi titulo"}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    url={"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}>
+    </Cards>
+    <Cards 
+    title={"Mi titulo"}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    url={"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}>
+    </Cards>
+    </div>
+    </div>
     </>
   )
 }
