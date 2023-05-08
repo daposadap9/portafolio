@@ -45,7 +45,7 @@ const Projects = () => {
         hover:text-white z-[9]" id="myButton">View my projects<FontAwesomeIcon className='ml-3 stroke' icon={faArrowCircleRight} color='#000'/>
         </button>
       </section>
-    <div className='mt-6'>
+    <div className='mt-6 mb-6 tablet:mb-2'>
       <Animation/>
       </div>
       
