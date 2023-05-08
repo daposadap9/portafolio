@@ -5,7 +5,7 @@ import Animation from '../../components/Animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import TransitionEffect from '../../components/transition/TransitionEffect';
-import Cards from '../../components/cards';
+import Cards from '../../components/Cards/Cards';
 
 const Projects = () => {
   return (
