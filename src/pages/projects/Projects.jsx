@@ -74,7 +74,7 @@ const Projects = () => {
     </Cards>
     <Cards 
     title={"Mi titulo"}
-    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo"}
     url={"https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"}>
     </Cards>
     <Cards 
