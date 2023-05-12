@@ -30,7 +30,7 @@ const Nav = ({ handleActive }) => {
       initial={{ width: 0 }}
       animate={{ width: "100vw" }}
       transition={{ duration: 0.7}}
-      className="w-screen relative h-full bg-[#C6C8EE] z-50 backdrop-blur-15 overflow-hidden pt-3"
+      className="w-screen relative h-full bg-[#ACB1D6] z-50 backdrop-blur-15 overflow-hidden pt-3"
       >
       <b>
       <ul className="flex flex-col items-center justify-center gap-2 text-2xl font-dashiellText italic font-black 
