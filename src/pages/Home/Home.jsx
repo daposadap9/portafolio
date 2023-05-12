@@ -141,7 +141,7 @@ function Home() {
         <FontAwesomeIcon className="px-0 py-0" id="myButton" 
         icon={faSun} style={{color: "#ffdd00",}} />:
         <FontAwesomeIcon id="myButton"
-        icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Cambiar fondo</button>
+        icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Change background</button>
       </section>
       {/* <section id="" className="fixed top-9 first:left-28">
         <img src="/images/ellipse/Ellipse-4.png " />

@@ -1,16 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  background: linear-gradient(45deg,#1a4756,#0a0616,#393560,#4a164f);
-  background-size: 150% 150%;
-  animation: color 10s ease-in-out infinite;
-  box-sizing: border-box;
-  color: rgb(21, 17, 41);
-  scroll-behavior: smooth;
-  height: 100%;
-  overflow-x: hidden;
-}
 @keyframes color{
   0%{
     background-position: 0 50%;

@@ -96,12 +96,13 @@ const Contact = () => {
                 <label htmlFor="cellPhone" className="absolute left-0 px-0 py-1 transition duration-0.3">Cellphone number</label>
               </div>
               <div className="inputBox flex flex-col m-2 w-72 midTablet:mt-10">
-                <textarea className="outline-none border-b mt-8 bg-transparent focus:text-violet w-2/4 mx-auto text-center"
+              <label htmlFor="message" className="flex w-50% mx-20 px-0" id="message">Message</label>
+                <textarea className="outline-none border-b mt-3 bg-transparent focus:text-violet w-2/4 mx-auto text-center"
                   placeholder="Write your message here..." id="message" required></textarea>
-                <label htmlFor="message" className="flex w-50% mx-20 px-0 translate-y-[-80px]" id="message">Message</label>
+                
               </div>
               <div className="inputBox flex flex-col m-2 relative w-full">
-              <button className="text-white boton"><a href="#contact">send</a></button>
+              <button className="text-white boton w-20 z-90 buttonAnimated mx-auto"><a href="#contact">send</a></button>
             </div>
             </form>
             
