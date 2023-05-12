@@ -82,6 +82,11 @@ const Projects = () => {
     text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
     url={"/images/projects/carritoDeCompras.png"}>
     </Cards>
+    <Cards
+    title={"Mi titulo"}
+    text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+    url={"/images/projects/portafolio.png"}>
+    </Cards>
     </div>
     </div>
     </>
