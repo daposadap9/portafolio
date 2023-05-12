@@ -27,15 +27,20 @@ function App() {
   }, [width]);
 
   return (
-    <div ref={containerWidth}>
-    <HeaderComplete width={width}/>
-    <Routes>
-    <Route path="/" element={<Home/>}/>
-    <Route path="/projects" element={<Projects/>}/>
-    <Route path="/about" element={<About/>}/>
-    </Routes>
-    <Contact />
-    </div>
+    <>
+      <div className="fixed-bg"></div>
+      <div className="content">
+        <div className="App" ref={containerWidth}>
+          <HeaderComplete width={width}/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/projects" element={<Projects/>}/>
+            <Route path="/about" element={<About/>}/>
+          </Routes>
+          <Contact />
+        </div>
+      </div>
+    </>
   )
 }
 
