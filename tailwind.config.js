@@ -57,7 +57,7 @@ export default {
       backgroundImage: {
         'circle-gradient': 'radial-gradient(ellipse at center bottom, rgba(42,47,79,1) 44%, rgba(1,0,12,1) 100%)',
         'circle-gradient2': 'radial-gradient(ellipse at center bottom, rgba(21, 17, 41) 44%, rgba(1,0,12,1) 100%)',
-        'circle-gradient3': 'radial-gradient(ellipse at center bottom, #654ea3  20%,#4A00E0 100%)',
+        'circle-gradient3': 'radial-gradient(ellipse at center bottom, #654ea3  10%,#4A00E0 100%)',
         
       },
     },
