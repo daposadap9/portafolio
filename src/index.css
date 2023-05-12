@@ -149,4 +149,5 @@ body {
   color: rgb(21, 17, 41);
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
