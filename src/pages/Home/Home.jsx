@@ -22,7 +22,7 @@ function Home() {
       },[])
 
   //background de imagen
-  const [backgroundDay, setBackgroundDay] = useState(true)
+  const [backgroundDay, setBackgroundDay] = useState(false)
 
   //logica para carrucel
   const changeBackground = () => {
