@@ -44,10 +44,10 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <nav className="flex midDesktop:bg-transparent midDesktop:static justify-center gap-5">
-        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[17%] text-2xl rounded-md" icon={faInstagram}/></a>
-        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[23%] text-2xl rounded-md" icon={faLinkedin}/></a>
-        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[20%] text-2xl rounded-xl" icon={faFacebook}/></a>
+      <nav className="flex midDesktop:bg-transparent midDesktop:static justify-center items-center gap-5">
+        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[17%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-md" icon={faInstagram}/></a>
+        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[23%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-md" icon={faLinkedin}/></a>
+        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[20%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-xl" icon={faFacebook}/></a>
       </nav>
     </header>
   );
