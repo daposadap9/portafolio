@@ -107,7 +107,7 @@ const About = () => {
         <button className="text-white boton"><a href="#textHome">click here</a></button>
     </section>
 
-        <section className='relative w-[600px] bg-violet h-full mb-20 rounded-md midMobile:px-10'>
+        <section className='relative w-[600px] bg-violet h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10'>
         <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12'>
         <div className='flex flex-col gap-2'>
