@@ -109,7 +109,7 @@ const About = () => {
 
         <section className='relative w-[600px] bg-circle-gradient3 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white'>
         <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
-        miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10'>
+        miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
         <div className='flex flex-col gap-2'>
         <Cards
         title={"Mi experiencia"}
