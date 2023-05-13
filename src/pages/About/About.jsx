@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import TransitionEffect from '../../components/transition/TransitionEffect';
 import among from "../../assets/among.json"
+import Cards from '../../components/Cards/Cards';
 
 const About = () => {
     const containerAnimation = useRef(null);
@@ -70,7 +71,7 @@ const About = () => {
         </button>
       </section>
     <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
-    miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-28'>
+    miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-32'>
       <Animation/>
       <div className='absolute miniTablet:translate-x-[-230px] miniTablet:w-[800px] first:w-[600px] first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px]  scale-x-[-1] hidden first:block' ref={containerAnimation}></div>
       </div>
@@ -104,13 +105,30 @@ const About = () => {
           to create customized and effective frontend solutions that exceed their expectations.
         </p>
         <button className="text-white boton"><a href="#textHome">click here</a></button>
+    </section>
 
-        <section className='relative flex justify-center w-full h-96'>
-          <div className='absolute miniTablet:w-[800px] first:w-[600px] scale-x-[-1] first:block' ref={containerAnimation2}></div>
+        <section className='relative w-[600px] bg-violet h-full mb-20 rounded-md midMobile:px-10'>
+        <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
+        miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12'>
+        <div className='flex flex-col gap-2'>
+        <Cards
+        title={"Mi experiencia"}
+        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        url={"/images/projects/portafolio.png"}>
+        </Cards>
+        <Cards
+        title={"Mi experiencia"}
+        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        url={"/images/projects/portafolio.png"}>
+        </Cards>
+        </div>
+        <div className='absolute miniTablet:translate-x-[-230px] miniTablet:w-[800px] first:w-[600px] first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px]  scale-x-[-1] hidden first:block' ref={containerAnimation2}></div>
+        </div>
         </section>
         
+        
       
-      </section>
+      
     </motion.div>
     </>
   )
