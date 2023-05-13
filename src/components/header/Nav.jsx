@@ -46,9 +46,9 @@ const Nav = ({ handleActive }) => {
         initial={{ x: -2000 }}
         animate={{ x: 0 }}
         transition={{ duration: 1.2}}>
-        <li><FontAwesomeIcon icon={faInstagram}/></li>
-        <li><FontAwesomeIcon icon={faLinkedin}/></li>
-        <li><FontAwesomeIcon icon={faFacebook}/></li>
+        <li className="cursor-pointer"><FontAwesomeIcon icon={faInstagram}/></li>
+        <li className="cursor-pointer"><FontAwesomeIcon icon={faLinkedin}/></li>
+        <li className="cursor-pointer"><FontAwesomeIcon icon={faFacebook}/></li>
       </motion.div>
         <motion.li
         initial={{ x: -2000 }}
