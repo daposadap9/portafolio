@@ -10,6 +10,7 @@ import among from "../../assets/among.json"
 
 const About = () => {
     const containerAnimation = useRef(null);
+    const containerAnimation2 = useRef(null);
     useEffect(() => {
         const anim = lottie.loadAnimation({
           container: containerAnimation.current,
@@ -18,8 +19,16 @@ const About = () => {
           autoplay: true,
           animationData: among,
         });
+        const anim2 = lottie.loadAnimation({
+          container: containerAnimation2.current,
+          render: "svg",
+          loop: true,
+          autoplay: true,
+          animationData: among,
+        });
         return () => {
           anim.destroy();
+          anim2.destroy();
         };
       }, []);
   return (
@@ -65,6 +74,43 @@ const About = () => {
       <Animation/>
       <div className='absolute miniTablet:translate-x-[-230px] miniTablet:w-[800px] first:w-[600px] first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px]  scale-x-[-1] hidden first:block' ref={containerAnimation}></div>
       </div>
+    </motion.div>
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    transition={{ duration: 1}}
+      className="App m-auto h-full pl-4 pr-4 pb-4
+      miniMobile:max-w-screen-miniMobile miniMobile:bg-transparent
+      mobile:max-w-screen-mobile mobile:bg-transparent
+      midMobile:max-w-screen-midMobile midMobile:bg-transparent
+      miniTablet:max-w-screen-miniTablet miniTablet:bg-transparent
+      tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden
+     "
+    >
+    <section data-aos-once="true" id="textHome">
+        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center">
+          <b>
+            <h1 className="text-violet text-4xl">Hi!</h1>
+          </b>
+          <b>
+            <span className="text-white">I'm Fronted developer</span>
+          </b>
+        </div>
+        <p className="text-white pb-6">
+          I specialize in frontend technologies such as React, Vue, Ionic, HTML, CSS, JavaScript, and Tailwind, as well as database management with SQL.
+          With a strong focus on frontend development. <br /> As a developer, I strive to continuously learn and grow in my skills and knowledge to stay up-to-date
+          in a constantly evolving field. <br /> Additionally, I value integrity and ethics in my work and professional relationships.
+          Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
+          to create customized and effective frontend solutions that exceed their expectations.
+        </p>
+        <button className="text-white boton"><a href="#textHome">click here</a></button>
+
+        <section className='relative flex justify-center w-full h-96'>
+          <div className='absolute miniTablet:w-[800px] first:w-[600px] scale-x-[-1] first:block' ref={containerAnimation2}></div>
+        </section>
+        
+      
+      </section>
     </motion.div>
     </>
   )
