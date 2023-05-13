@@ -6,6 +6,8 @@ import HeaderComplete from "./components/header/HeaderComplete";
 import { useEffect, useRef, useState } from "react";
 import Contact from "./components/Contact";
 import About from "./pages/About/About";
+import { faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/about" element={<About/>}/>
           </Routes>
+          <div className="fixed w-[70px] h-[70px] z-[9] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></div>
           <Contact />
         </div>
       </div>

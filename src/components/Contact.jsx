@@ -5,6 +5,7 @@ import instagram from "../assets/instagram.json"
 import linkedin from "../assets/linkedin.json"
 import facebook from "../assets/facebook.json"
 import lottie from "lottie-web";
+import { faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
     const containerAnimation6 = useRef(null);
