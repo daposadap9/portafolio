@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import lottie from "lottie-web";
 import Banner from '../../components/Banner/Banner'
 import { motion } from "framer-motion";
@@ -10,8 +10,16 @@ import among from "../../assets/among.json"
 import Cards from '../../components/Cards/Cards';
 
 const About = () => {
+
+    //animaciones
     const containerAnimation = useRef(null);
     const containerAnimation2 = useRef(null);
+    //animaciones
+    const contenedorPadreAnimation2 = useRef(null);
+    const [isFixed, setIsFixed] = useState(false);
+
+
+    //animacion
     useEffect(() => {
         const anim = lottie.loadAnimation({
           container: containerAnimation.current,
@@ -32,6 +40,38 @@ const About = () => {
           anim2.destroy();
         };
       }, []);
+    //animacion
+
+      //logica para fixed
+    
+      useEffect(() => {
+        const handleScroll = () => {
+          const contenedorPadre = contenedorPadreAnimation2.current;
+          const elementoHijo = containerAnimation2.current;
+    
+          const contenedorRect = contenedorPadre.getBoundingClientRect();
+          const contenedorTop = contenedorRect.top;
+          const contenedorLeft = contenedorRect.left;
+    
+          if (contenedorTop <= 0) {
+            setIsFixed(true);
+            elementoHijo.style.top = `${Math.abs(contenedorTop) + 2}px`;
+            elementoHijo.style.left = `${contenedorLeft + 2}px`;
+          } else {
+            setIsFixed(false);
+            elementoHijo.style.top = '2px';
+            elementoHijo.style.left = '2px';
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+      //logica para fixed
+
   return (
   <>
   <TransitionEffect/>
@@ -107,7 +147,7 @@ const About = () => {
         <button className="text-white boton"><a href="#textHome">click here</a></button>
         </section>
 
-        <section className='relative w-[600px] bg-circle-gradient3 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white'>
+        <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient3 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-y-hidden'>
         <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
         <div className='flex flex-col gap-2'>
@@ -124,14 +164,10 @@ const About = () => {
         </div>
         <div className='absolute miniTablet:translate-x-[-230px] miniTablet:w-[800px] first:w-[600px] 
         first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px] 
-        scale-x-[-1] hidden first:block miniMobile:translate-x-[-300px] z-50' ref={containerAnimation2}></div>
+        scale-x-[-1] hidden first:block miniMobile:translate-x-[-300px]' ref={containerAnimation2}></div>
         </div>
         </section>
-          
-        
-      
-      
-    </motion.div>
+    </motion.div>   
     </>
   )
 }
