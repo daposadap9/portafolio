@@ -54,7 +54,7 @@ const Nav = ({ handleActive }) => {
         initial={{ x: -2000 }}
         animate={{ x: 0 }}
         transition={{ duration: 1}}
-        className="px-4 py-0 m-0 text-center max-w-xs"
+        className="px-4 py-0 m-0 text-center max-w-[280px]"
         ref={containerAnimation}>
         </motion.li>
         
