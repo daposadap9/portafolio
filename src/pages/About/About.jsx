@@ -51,16 +51,13 @@ const About = () => {
     
           const contenedorRect = contenedorPadre.getBoundingClientRect();
           const contenedorTop = contenedorRect.top;
-          const contenedorLeft = contenedorRect.left;
     
           if (contenedorTop <= 0) {
             setIsFixed(true);
             elementoHijo.style.top = `${Math.abs(contenedorTop) + 2}px`;
-            elementoHijo.style.left = `${contenedorLeft + 2}px`;
           } else {
             setIsFixed(false);
             elementoHijo.style.top = '2px';
-            elementoHijo.style.left = '2px';
           }
         };
     
@@ -148,7 +145,7 @@ const About = () => {
         </section>
 
         <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient3 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-y-hidden'>
-        <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
+        <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
         <div className='flex flex-col gap-2'>
         <Cards
@@ -162,9 +159,9 @@ const About = () => {
         url={"/images/projects/portafolio.png"}>
         </Cards>
         </div>
-        <div className='absolute miniTablet:translate-x-[-230px] miniTablet:w-[800px] first:w-[600px] 
+        <div className='absolute miniTablet:translate-x-[-200px] miniTablet:w-[800px] first:w-[600px] 
         first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px] 
-        scale-x-[-1] hidden first:block miniMobile:translate-x-[-300px]' ref={containerAnimation2}></div>
+        scale-x-[-1] hidden first:block miniMobile:translate-x-[-280px]' ref={containerAnimation2}></div>
         </div>
         </section>
     </motion.div>   
