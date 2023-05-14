@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { NavLink, } from "react-router-dom";
 import { faEnvelope, faHome, faTasks, faUser} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faTwitch } from "@fortawesome/free-brands-svg-icons";
 import person from "../../assets/person.json"
 import Lottie from "lottie-web";
 
@@ -48,7 +48,7 @@ const Nav = ({ handleActive }) => {
         transition={{ duration: 1.2}}>
         <li className="cursor-pointer"><FontAwesomeIcon icon={faInstagram}/></li>
         <li className="cursor-pointer"><FontAwesomeIcon icon={faLinkedin}/></li>
-        <li className="cursor-pointer"><FontAwesomeIcon icon={faFacebook}/></li>
+        <li className="cursor-pointer"><FontAwesomeIcon icon={faTwitch}/></li>
       </motion.div>
         <motion.li
         initial={{ x: -2000 }}

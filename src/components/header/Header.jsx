@@ -1,4 +1,4 @@
-import { faFacebook, faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faTwitch } from "@fortawesome/free-brands-svg-icons";
 import {faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -14,9 +14,6 @@ const Header = () => {
       <Link to="/" className="px-2 py-2">
         <img src="/images/Logo.png" alt="logo" />
       </Link>
-      {/* <li><FontAwesomeIcon icon={faInstagram}/></li>
-      <li><FontAwesomeIcon icon={faLinkedin}/></li>
-      <li><FontAwesomeIcon icon={faFacebook}/></li> */}
       </div>
       
       <nav className="flex">
@@ -45,9 +42,9 @@ const Header = () => {
         </ul>
       </nav>
       <nav className="flex midDesktop:bg-transparent midDesktop:static justify-center items-center gap-5">
-        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[17%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-md" icon={faInstagram}/></a>
-        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[23%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-md" icon={faLinkedin}/></a>
-        <a className="z-80" target="_black" href="http://facebook.com"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[20%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-xl" icon={faFacebook}/></a>
+        <a className="z-80" target="_black" href="https://www.instagram.com/diego_a_posada/"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[17%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-md" icon={faInstagram}/></a>
+        <a className="z-80" target="_black" href="https://www.linkedin.com/in/diego-alejandro-posada-posada-2aa562129"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[23%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-md" icon={faLinkedin}/></a>
+        <a className="z-80" target="_black" href="https://www.twitch.tv/kenpiad"><FontAwesomeIcon className="midDesktop:absolute midDesktop:top-4 midDesktop:right-[20%] hover:shadow-white hover:shadow-md hover:text-3xl hover:top-3 text-2xl rounded-xl" icon={faTwitch}/></a>
       </nav>
     </header>
   );
