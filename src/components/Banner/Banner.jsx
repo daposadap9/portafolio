@@ -64,7 +64,7 @@ const Banner = ({children}) => {
       className="top-13 flex rounded-lg justify-center z-[-5] absolute w-full overflow-hidden h-[480px]" >
         <div className="flex flex-row" ref={slideshow}>
         {children}
-        </div>:""
+        </div>
       </motion.div>
   )
 }

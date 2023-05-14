@@ -118,8 +118,7 @@ function Home() {
       miniTablet:max-w-screen-miniTablet miniTablet:bg-transparent
       tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden
      "
-    >
-      
+    > 
       <section className="m-4">
         <div>
           <b>
@@ -143,16 +142,12 @@ function Home() {
         <FontAwesomeIcon id="myButton"
         icon={faMoon} style={{color: "rgb(193, 110, 238)",}} />} Change background</button>
       </section>
-      {/* <section id="" className="fixed top-9 first:left-28">
-        <img src="/images/ellipse/Ellipse-4.png " />
-        <img
-          className="absolute top-2/4 right-1/3"
-          src="/images/ellipse/Ellipse-1.png"
-        />
-      </section> */}
       <div className="mobile:mt-5 miniTablet:translate-y-[-20px] miniMobile:translate-y-[-20px] first:translate-y-[-20px] mobile:translate-y-[0px] miniTablet:mt-0 ">
         <Animation />
       </div>
+      <section className="flex justify-end rounded-md bg-fixed bg-cover bg-center" style={{backgroundImage: "url('./images/fondoIlustracion.jpeg')"}}>
+      <img className="w-[500px]" src="/images/Ilustracion.png" alt="" />
+      </section>
     
 
       <section data-aos="fade-down" data-aos-once="true" id="textHome">

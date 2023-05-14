@@ -42,7 +42,6 @@ const Projects = () => {
   //animacion
 
     //logica para fixed
-  
     useEffect(() => {
       const handleScroll = () => {
         const contenedorPadre = contenedorPadreAnimation2.current;
@@ -66,6 +65,8 @@ const Projects = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
+    //logica para fixed
+
   return (
   <>
   <TransitionEffect/>
@@ -125,15 +126,19 @@ const Projects = () => {
             <h1 className="text-violet text-4xl">Hi!</h1>
           </b>
           <b>
-            <span className="text-white">I'm Fronted developer</span>
+            <span className="text-white">these are my projects</span>
           </b>
         </div>
         <p className="text-white pb-6 mb-5">
-          I specialize in frontend technologies such as React, Vue, Ionic, HTML, CSS, JavaScript, and Tailwind, as well as database management with SQL.
-          With a strong focus on frontend development. <br /> As a developer, I strive to continuously learn and grow in my skills and knowledge to stay up-to-date
-          in a constantly evolving field. <br /> Additionally, I value integrity and ethics in my work and professional relationships.
-          Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
-          to create customized and effective frontend solutions that exceed their expectations.
+        These are my personal projects that I have been developing in a bootcamp called Academlo. During this bootcamp, 
+        I have used various technologies such as HTML, CSS, JavaScript, and Tailwind. Tailwind, in particular, has greatly 
+        facilitated my work by providing a framework that simplifies the management of HTML element classes.
+        In these projects, I have extensively used React, mainly leveraging its component-based approach to replicate and reuse
+        elements throughout the page. Additionally, I have used React Router Dom to handle routes and Redux to manage global 
+        states. Regarding API consumption, Axios has been crucial, allowing seamless integration with multiple APIs. 
+        Furthermore, I have acquired knowledge in using React hooks, manipulating DOM elements, and working with events. 
+        For example, I have used event listeners like window.addEventListener('scroll', handleScroll) to enhance user 
+        interactions.
         </p>
         </section>
 
@@ -144,17 +149,37 @@ const Projects = () => {
         <Cards
         title={"Pokedex"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
-        url={"/images/projects/portafolio.png"}>
+        url={"/images/projects/pokedex.png"}>
         </Cards>
         <Cards
-        title={"Mi experiencia"}
+        title={"Portafolio"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/portafolio.png"}>
         </Cards>
         <Cards
-        title={"Mi experiencia"}
+        title={"App Ricky Morty"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
-        url={"/images/projects/portafolio.png"}>
+        url={"/images/projects/rickyMorty.png"}>
+        </Cards>
+        <Cards
+        title={"App Ecommerce"}
+        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        url={"/images/projects/carritoDeCompras.png"}>
+        </Cards>
+        <Cards
+        title={"Infogalax"}
+        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        url={"/images/projects/infogalax.png"}>
+        </Cards>
+        <Cards
+        title={"Crud Users"}
+        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        url={"/images/projects/crudUsers.png"}>
+        </Cards>
+        <Cards
+        title={"Weather app"}
+        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        url={"/images/projects/appClima.png"}>
         </Cards>
         </div>
         <div className='absolute miniTablet:translate-x-[-200px] miniTablet:w-[800px] first:w-[600px] 

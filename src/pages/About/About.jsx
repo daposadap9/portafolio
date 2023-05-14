@@ -42,7 +42,7 @@ const About = () => {
       }, []);
     //animacion
 
-      //logica para fixed
+      //logica para que la animacion quede fixed
     
       useEffect(() => {
         const handleScroll = () => {
@@ -67,7 +67,7 @@ const About = () => {
           window.removeEventListener('scroll', handleScroll);
         };
       }, []);
-      //logica para fixed
+      //logica para que la animacion quede fixed
 
   return (
   <>
