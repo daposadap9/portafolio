@@ -151,7 +151,7 @@ function Home() {
     
 
       <section data-aos="fade-down" data-aos-once="true" id="textHome">
-        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center">
+        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center font-semibold">
           <b>
             <h1 className="text-violet text-4xl">Hi!</h1>
           </b>

@@ -125,21 +125,29 @@ const About = () => {
       tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden px-2
      "
     >
+      <section className="flex justify-end rounded-md bg-fixed bg-cover bg-center" style={{backgroundImage: "url('./images/paisaje2.jpeg')"}}>
+      <img className="w-[500px]" src="/images/Ilustracion.png" alt="" />
+      </section>
     <section data-aos-once="true" id="textHome">
-        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center">
+        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center font-semibold">
           <b>
             <h1 className="text-violet text-4xl">Hi!</h1>
           </b>
           <b>
-            <span className="text-white">I'm Fronted developer</span>
+            <span className="text-white text-2xl">I'm <h1 className="text-violet text-2xl">Diego</h1></span>
           </b>
         </div>
         <p className="text-white pb-6 mb-5">
-          I specialize in frontend technologies such as React, Vue, Ionic, HTML, CSS, JavaScript, and Tailwind, as well as database management with SQL.
-          With a strong focus on frontend development. <br /> As a developer, I strive to continuously learn and grow in my skills and knowledge to stay up-to-date
-          in a constantly evolving field. <br /> Additionally, I value integrity and ethics in my work and professional relationships.
-          Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
-          to create customized and effective frontend solutions that exceed their expectations.
+        Currently, I am participating in a bootcamp at Academlo, where I am learning various programming technologies. 
+        Within the bootcamp, I am focused on studying frontend development with React, Redux, Redux Tolkin, Tailwind, 
+        API consumption, and backend development with Node.js. It is worth mentioning that in the technology sector, 
+        I already have previous experience working with tools such as Ionic, Vue.js, MySQL, SQL, and Kotlin. I am excited 
+        to continue expanding my knowledge in these areas and apply what I have learned in future projects. I am a 
+        passionate individual when it comes to my work, always seeking to learn and improve my skills in order to provide 
+        better service to my clients/employer. I am responsible, organized, and possess excellent communication skills, 
+        which allow me to work effectively in a team and handle high-pressure situations efficiently.
+        I am interested in furthering my professional growth in my field and I am willing to take on new 
+        challenges and learn from them. I hope to contribute my skills and experience in the technology field.
         </p>
         </section>
 

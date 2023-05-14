@@ -122,12 +122,12 @@ const Projects = () => {
      "
     >
     <section data-aos-once="true" id="textHome">
-        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center">
+        <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center font-semibold">
           <b>
             <h1 className="text-violet text-4xl">Hi!</h1>
           </b>
           <b>
-            <span className="text-white">these are my projects</span>
+            <span className="text-white text-2xl">these are my projects</span>
           </b>
         </div>
         <p className="text-white pb-6 mb-5">
