@@ -46,9 +46,9 @@ const Nav = ({ handleActive }) => {
         initial={{ x: -2000 }}
         animate={{ x: 0 }}
         transition={{ duration: 1.2}}>
-        <li className="cursor-pointer"><FontAwesomeIcon icon={faInstagram}/></li>
-        <li className="cursor-pointer"><FontAwesomeIcon icon={faLinkedin}/></li>
-        <li className="cursor-pointer"><FontAwesomeIcon icon={faTwitch}/></li>
+        <li className="cursor-pointer"><a href="https://www.instagram.com/diego_a_posada/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}/></a></li>
+        <li className="cursor-pointer"><a href="https://www.linkedin.com/in/diego-alejandro-posada-posada-2aa562129" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+        <li className="cursor-pointer"><a href="https://www.twitch.tv/kenpiad" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitch}/></a></li>
       </motion.div>
         <motion.li
         initial={{ x: -2000 }}
