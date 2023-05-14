@@ -156,7 +156,7 @@ function Home() {
             <h1 className="text-violet text-4xl">Hi!</h1>
           </b>
           <b>
-            <span className="text-white">I'm Fronted developer</span>
+            <span className="text-white text-2xl">I'm Fronted developer</span>
           </b>
         </div>
         <p className="text-white pb-6">
@@ -225,7 +225,7 @@ function Home() {
         </div>
       </section>
       <section className="text-white m-5">
-        <div className="m-4"><b><h1 className="text-violet text-2xl mt-4 mb-4">Last landing<span className="text-white"> and website projects</span></h1></b>
+        <div className="m-4"><b><h1 className="text-violet text-2xl mt-4 mb-4">Development<span className="text-white"> of custom websites,  web applications, and mobile applications with Ionic.</span></h1></b>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sint esse doloremque ipsum magni ut consequuntur
             hic praesentium repellat quas.</p></div>
         <div className="m-4 relative flex justify-center">
