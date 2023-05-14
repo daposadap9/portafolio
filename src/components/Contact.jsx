@@ -103,7 +103,7 @@ const Contact = () => {
                 
               </div>
               <div className="inputBox flex flex-col m-2 relative w-full">
-              <button className="text-white boton w-20 z-90 buttonAnimated mx-auto"><a href="#contact">send</a></button>
+              <button className="text-white boton buttonAnimated w-20 mx-auto"><a href="#contact">send</a></button>
             </div>
             </form>
             
@@ -125,7 +125,7 @@ const Contact = () => {
           midTablet:justify-around
           text-4xl flex-wrap">
             <li><a href="https://www.instagram.com/diego_a_posada/" target='_blank'><span className="w-12 block" ref={containerAnimation8}></span></a></li>
-            <li className='bg-white px-4 rounded-full'><a className='relative justify-center flex bg-white px-2' target='_blank' href="https://www.twitch.tv/kenpiad"><span className="w-12 block absolute" ref={containerAnimation6}></span></a></li>
+            <li className='bg-carton px-4 rounded-full'><a className='relative justify-center flex bg-carton px-2' target='_blank' href="https://www.twitch.tv/kenpiad"><span className="w-12 block absolute" ref={containerAnimation6}></span></a></li>
             <li><a href="https://www.linkedin.com/in/diego-alejandro-posada-posada-2aa562129" target='_blank'><span className="w-12 block" ref={containerAnimation7}></span></a></li>
           </ul>
         </section>

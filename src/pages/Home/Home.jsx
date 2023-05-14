@@ -14,6 +14,7 @@ import Banner from "../../components/Banner/Banner";
 import Animation from "../../components/Animation";
 import TransitionEffect from "../../components/transition/TransitionEffect";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -166,7 +167,7 @@ function Home() {
           Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
           to create customized and effective frontend solutions that exceed their expectations.
         </p>
-        <button className="text-white boton"><a href="#textHome">click here</a></button>
+        <Link to="/about" className="text-white boton"><a>click here</a></Link>
       </section>
       <section className="mt-6 rounded-xl w-5/6 flex flex-col m-auto p-3 bg-[#3a2f634f] shadow-2xl
       miniMobile:p-4

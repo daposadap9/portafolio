@@ -8,13 +8,18 @@ import Contact from "./components/Contact";
 import About from "./pages/About/About";
 import { faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 function App() {
   //refencia ancho
   const containerWidth = useRef(null);
   const [width, setWidth] = useState(window.innerWidth);
-  
+  const [musicActive, setmusicActive] = useState(false)
+  const handleActivateMusic = () => {
+    setmusicActive(!musicActive)
+  }
   //UseEffect para capturar el ancho
   useEffect(() => {
     //funcion y disparador para almacenar el width en el useState()
@@ -39,7 +44,9 @@ function App() {
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/about" element={<About/>}/>
           </Routes>
-          <div className="fixed w-[70px] h-[70px] z-[9] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></div>
+          <ScrollToTop /> {/* Aquí colocamos el componente ScrollToTop que es para que el scroll quede en 0 cada vez que yo cambie de ruta */}
+          <a className="fixed w-[65px] h-[65px] z-[9] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></a>
+          <a onClick={handleActivateMusic} className="fixed w-[50px] text-white h-[50px] z-[9] top-24 right-2 bg-morado rounded-full p-2 flex items-center justify-center border-2 border-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="2x" icon={musicActive ? faPlay : faPause}/></a>
           <Contact />
         </div>
       </div>
