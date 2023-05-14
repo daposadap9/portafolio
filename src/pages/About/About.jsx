@@ -134,20 +134,24 @@ const About = () => {
             <span className="text-white">I'm Fronted developer</span>
           </b>
         </div>
-        <p className="text-white pb-6">
+        <p className="text-white pb-6 mb-5">
           I specialize in frontend technologies such as React, Vue, Ionic, HTML, CSS, JavaScript, and Tailwind, as well as database management with SQL.
           With a strong focus on frontend development. <br /> As a developer, I strive to continuously learn and grow in my skills and knowledge to stay up-to-date
           in a constantly evolving field. <br /> Additionally, I value integrity and ethics in my work and professional relationships.
           Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
           to create customized and effective frontend solutions that exceed their expectations.
         </p>
-        <button className="text-white boton"><a href="#textHome">click here</a></button>
         </section>
 
         <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient3 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-y-hidden'>
         <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
         <div className='flex flex-col gap-2'>
+        <Cards
+        title={"Mi experiencia"}
+        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        url={"/images/projects/portafolio.png"}>
+        </Cards>
         <Cards
         title={"Mi experiencia"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
