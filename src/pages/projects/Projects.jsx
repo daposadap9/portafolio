@@ -8,6 +8,7 @@ import TransitionEffect from '../../components/transition/TransitionEffect';
 import Cards from '../../components/Cards/Cards';
 import among from "../../assets/among.json"
 import lottie from "lottie-web";
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const Projects = () => {
 
   //animaciones
@@ -150,36 +151,50 @@ const Projects = () => {
         title={"Pokedex"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/pokedex.png"}>
+        <a href=""><FontAwesomeIcon size='2x' icon={faGithub}/></a>
+        <a href=""><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Portafolio"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/portafolio.png"}>
+        <a href=""><FontAwesomeIcon size='2x' icon={faGithub}/></a>
+        <a href=""><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"App Ricky Morty"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/rickyMorty.png"}>
+        <a href=""><FontAwesomeIcon size='2x' icon={faGithub}/></a>
+        <a href=""><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"App Ecommerce"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/carritoDeCompras.png"}>
+        <a href=""><FontAwesomeIcon size='2x' icon={faGithub}/></a>
+        <a href=""><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Infogalax"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/infogalax.png"}>
+        <a href=""><FontAwesomeIcon size='2x' icon={faGithub}/></a>
+        <a href=""><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Crud Users"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/crudUsers.png"}>
+        <a href=""><FontAwesomeIcon size='2x' icon={faGithub}/></a>
+        <a href=""><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Weather app"}
         text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
         url={"/images/projects/appClima.png"}>
+        <a href=""><FontAwesomeIcon size='2x' icon={faGithub}/></a>
+        <a href=""><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         </div>
         <div className='absolute miniTablet:translate-x-[-200px] miniTablet:w-[800px] first:w-[600px] 
