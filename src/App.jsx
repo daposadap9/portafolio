@@ -10,7 +10,7 @@ import { faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import ScrollToTop from "./components/ScrollToTop";
-
+import { useNavigate } from 'react-router-dom';
 
 
 function App() {
@@ -21,6 +21,8 @@ function App() {
 
   const [width, setWidth] = useState(window.innerWidth);
   const [musicActive, setmusicActive] = useState(false)
+
+  const history = useNavigate();
 
 
   const handleActivateMusic = () => {
@@ -45,6 +47,14 @@ function App() {
     // Limpia el evento al desmontar el componente
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
+
+  //useEffect para redirigir a la ruta raiz cada vez que recarga la pagina
+  useEffect(() => {
+    history("/");
+  }, []);
+  //useEffect para redirigir a la ruta raiz cada vez que recarga la pagina
+
+
 
   const handleAudioEnded = () => {
     const audioElement = audioRef.current;
