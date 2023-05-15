@@ -25,17 +25,23 @@ function Home() {
 
   //background de imagen
   const [backgroundDay, setBackgroundDay] = useState(false)
+  //background de imagen
 
-  //logica para carrucel
+  //logica para banner
   const changeBackground = () => {
     setBackgroundDay(!backgroundDay)
   }
+  //logica para banner
+
   //animaciones
   const containerAnimation2 = useRef(null);
   const containerAnimation3 = useRef(null);
   const containerAnimation4 = useRef(null);
   const containerAnimation5 = useRef(null);
+  //animaciones
 
+
+  //UseEffect de animaciones//
   useEffect(() => {
     const anim2 = lottie.loadAnimation({
       container: containerAnimation2.current,
@@ -72,10 +78,7 @@ function Home() {
       anim5.destroy();
     };
   }, []);
-
-
-
-//logica para formulario
+  //UseEffect de animaciones//
   
 
   return (
@@ -168,7 +171,7 @@ function Home() {
           Customer satisfaction is my top priority. I make every effort to fully understand the needs and expectations of my clients and work closely with them
           to create customized and effective frontend solutions that exceed their expectations.
         </p>
-        <Link to="/about" className="text-white boton"><a href="#textHome">click here</a></Link>
+        <Link to="/about" className="text-white boton">send</Link>
       </section>
       <section className="mt-6 rounded-xl w-5/6 flex flex-col m-auto p-3 bg-[#3a2f634f] shadow-2xl
       miniMobile:p-4
