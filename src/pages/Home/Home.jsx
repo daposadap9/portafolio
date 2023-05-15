@@ -15,7 +15,8 @@ import Animation from "../../components/Animation";
 import TransitionEffect from "../../components/transition/TransitionEffect";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import "atropos/atropos.css";
+import Atropos from 'atropos/react';
 
 function Home() {
   useEffect(()=>{
@@ -176,6 +177,7 @@ function Home() {
       miniTablet:p-9 miniTablet:w-8/12
       tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
       " id="Cards" >
+        <Atropos>
         <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
@@ -188,6 +190,8 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
+        </Atropos>
+        <Atropos>
         <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
@@ -200,6 +204,8 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
+        </Atropos>
+        <Atropos>
         <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
@@ -212,6 +218,8 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
+        </Atropos>
+        <Atropos>
         <div className="text-gray mt-3 bg-carton
         p-6 rounded-xl
         mobile:p-10
@@ -224,6 +232,7 @@ function Home() {
           <p className="text-center mt-2">Experience the world through VR glases
           </p>
         </div>
+        </Atropos>
       </section>
       <section data-aos="fade-right" data-aos-once="true" className="text-white m-5">
         <div className="m-4"><b><h1 className="text-violet text-2xl mt-4 mb-4">Development<span className="text-white"> of custom websites,  web applications, and mobile applications with Ionic.</span></h1></b>
