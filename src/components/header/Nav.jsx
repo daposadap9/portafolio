@@ -10,7 +10,13 @@ import Lottie from "lottie-web";
 const Nav = ({ handleActive }) => {
 
   const containerAnimation = useRef(null)
+  const divRef = useRef(null);
 
+  useEffect(() => {
+    if (divRef.current) {
+      divRef.current.scrollTop = divRef.current.scrollHeight;
+    }
+  }, []);
   useEffect(() => {
     const anim = Lottie.loadAnimation({
       container: containerAnimation.current,
@@ -25,7 +31,7 @@ const Nav = ({ handleActive }) => {
   }, []);
 
   return (
-  <div className="h-screen overflow-hidden overflow-y-auto absolute">
+  <div ref={divRef} className="h-screen overflow-hidden overflow-y-auto absolute">
       <motion.nav
       initial={{ width: 0 }}
       animate={{ width: "100vw" }}
