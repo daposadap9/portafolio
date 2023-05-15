@@ -12,6 +12,7 @@ import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import ScrollToTop from "./components/ScrollToTop";
 
 
+
 function App() {
   //refencia ancho
   const containerWidth = useRef(null);
@@ -76,6 +77,7 @@ function App() {
           </audio>
           </div>
           <Contact />
+          
         </div>
       </div>
     </>

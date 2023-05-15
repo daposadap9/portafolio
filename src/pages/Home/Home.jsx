@@ -16,7 +16,6 @@ import TransitionEffect from "../../components/transition/TransitionEffect";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-
 function Home() {
   useEffect(()=>{
     Aos.init({duration:1000});
@@ -147,7 +146,8 @@ function Home() {
         <Animation />
       </div>
       <section className="flex justify-end rounded-md bg-fixed bg-cover bg-center" style={{backgroundImage: "url('./images/fondoIlustracion.jpeg')"}}>
-      <img className="w-[500px]" src="/images/Ilustracion.png" alt="" />
+      <img
+           className="w-[500px]" src="/images/Ilustracion.png" alt="" />
       </section>
     
 
