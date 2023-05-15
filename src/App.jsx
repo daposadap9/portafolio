@@ -68,7 +68,7 @@ function App() {
           <div onClick={handleActivateMusic} className="fixed w-[50px] text-white h-[50px] z-[9] top-24 right-2 bg-morado rounded-full p-2 flex items-center justify-center border-2 border-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="2x" icon={musicActive ? faPause: faPlay }/>
           </div>
           <div  className="absolute top-0 opacity-0 w-full" >
-            <audio ref={audioRef} 
+            <audio ref={audioRef}
             controls={false}
             onEnded={handleAudioEnded}>
             <source src="./audio/Song.mp3" type="audio/mpeg" />

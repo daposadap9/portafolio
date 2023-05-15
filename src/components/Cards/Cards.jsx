@@ -10,7 +10,7 @@ const Cards = ({url, title, text, children}) => {
             <div className='relative p-1'>
               <h1 className='font-bold m-0 text-white text-xl'>{title}</h1>
             </div>
-            <div className='flex flex-col relative justify-center overflow-y-auto px-2 h-[200px] z-10'>
+            <div className='flex flex-col relative justify-center overflow-y-auto px-2 h-[180px]'>
                 <h3 className='absolute h-[200px] top-0 bg-morado'>{text}</h3>
             </div>
             <div className='flex justify-around relative'>
