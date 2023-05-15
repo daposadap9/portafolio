@@ -16,6 +16,7 @@ import TransitionEffect from "../../components/transition/TransitionEffect";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+
 function Home() {
   useEffect(()=>{
     Aos.init({duration:1000});
@@ -149,7 +150,6 @@ function Home() {
       <img
            className="w-[500px]" src="/images/Ilustracion.png" alt="" />
       </section>
-    
 
       <section data-aos="fade-down" data-aos-once="true" id="textHome">
         <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center font-semibold">

@@ -9,7 +9,8 @@ import Cards from '../../components/Cards/Cards';
 import among from "../../assets/among.json"
 import lottie from "lottie-web";
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-
+import "atropos/atropos.css";
+import Atropos from 'atropos/react';
 
 const Projects = () => {
 
@@ -123,6 +124,12 @@ const Projects = () => {
       tablet:max-w-screen-tablet tablet:bg-transparent overflow-hidden px-2
      "
     >
+    <Atropos>
+      <section className="flex justify-end rounded-md bg-fixed bg-cover bg-center" style={{backgroundImage: "url('./images/fondoIlustracion.jpeg')"}}>
+      <img
+           className="w-[500px]" src="/images/Ilustracion.png" alt="" />
+      </section>
+    </Atropos>
     <section data-aos-once="true" id="textHome">
         <div className="flex justify-center items-center m-4 mobile:mt-8 midMobile:mt-1 text-center font-semibold">
           <b>
