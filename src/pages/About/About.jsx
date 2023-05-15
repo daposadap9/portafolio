@@ -158,12 +158,12 @@ const About = () => {
         <Cards
         title={"Apprentice in Emtelco - Duration 6 months"}
         text={"During this internship experience, I learned how to use NPM installations and, for the first time, I gained knowledge in frameworks such as Ionic and Vue. Additionally, I successfully made my first REST API consumption"}
-        url={"/images/projects/portafolio.png"}>
+        url={"/images/about/Emtelco.jpg"}>
         </Cards>
         <Cards
-        title={"Information Systems Assistant - Duration 1 year and 7 months"}
+        title={"Information Systems Assistant in Corbeta - Duration 1 year and 7 months"}
         text={"Working as a support assistant at a car company, I provide functional-level support for an information system. I extensively analyze potential system improvements, gather requirements, escalate cases, analyze data, and generate reports. I have a strong proficiency in Excel, as I handle data analysis and process automation. Additionally, I conduct user training sessions to ensure effective system utilization."}
-        url={"/images/projects/portafolio.png"}>
+        url={"/images/about/Colombiana.jpg"}>
         </Cards>
         <Cards
         title={"Freelance web developer in Ememca - Duration 6 months"}
