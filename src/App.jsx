@@ -64,7 +64,7 @@ function App() {
           </Routes>
           <ScrollToTop /> {/* Aquí colocamos el componente ScrollToTop que es para que el scroll quede en 0 cada vez que yo cambie de ruta */}
 
-          <a className="fixed w-[65px] h-[65px] z-[9] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></a>
+          <a href="https://web.whatsapp.com/send?phone=+573207689885" target="_blank" rel="noreferrer" className="fixed w-[65px] h-[65px] z-[9] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></a>
           <div onClick={handleActivateMusic} className="fixed w-[50px] text-white h-[50px] z-[9] top-24 right-2 bg-morado rounded-full p-2 flex items-center justify-center border-2 border-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="2x" icon={musicActive ? faPause: faPlay }/>
           </div>
           <div  className="absolute top-0 opacity-0 w-full" >
@@ -76,7 +76,7 @@ function App() {
           </audio>
           </div>
 
-          
+
           <Contact />
         </div>
       </div>
