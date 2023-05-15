@@ -50,10 +50,9 @@ const Projects = () => {
       const handleScroll = () => {
         const contenedorPadre = contenedorPadreAnimation2.current;
         const elementoHijo = containerAnimation2.current;
-  
-        const contenedorRect = contenedorPadre.getBoundingClientRect();
+        if(contenedorPadre){
+          const contenedorRect = contenedorPadre.getBoundingClientRect();
         const contenedorTop = contenedorRect.top;
-  
         if (contenedorTop <= 0) {
           setIsFixed(true);
           elementoHijo.style.top = `${Math.abs(contenedorTop) + 2}px`;
@@ -62,7 +61,8 @@ const Projects = () => {
           elementoHijo.style.top = '2px';
         }
       };
-  
+        }
+        
       window.addEventListener('scroll', handleScroll);
   
       return () => {

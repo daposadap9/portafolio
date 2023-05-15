@@ -51,6 +51,7 @@ function App() {
   //useEffect para redirigir a la ruta raiz cada vez que recarga la pagina
   useEffect(() => {
     history("/");
+    window.scrollTo(0,0)
   }, []);
   //useEffect para redirigir a la ruta raiz cada vez que recarga la pagina
 
