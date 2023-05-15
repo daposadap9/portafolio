@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { NavLink, } from "react-router-dom";
 import { faEnvelope, faHome, faTasks, faUser} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faLinkedin, faTwitch } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faTwitch } from "@fortawesome/free-brands-svg-icons";
 import person from "../../assets/person.json"
 import Lottie from "lottie-web";
 
@@ -31,7 +31,7 @@ const Nav = ({ handleActive }) => {
   }, []);
 
   return (
-  <div ref={divRef} className="h-screen overflow-hidden overflow-y-auto absolute">
+  <div ref={divRef} style={{overflow: "auto"}} className="h-screen overflow-hidden overflow-y-auto absolute">
       <motion.nav
       initial={{ width: 0 }}
       animate={{ width: "100vw" }}

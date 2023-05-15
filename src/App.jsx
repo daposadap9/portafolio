@@ -15,10 +15,22 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   //refencia ancho
   const containerWidth = useRef(null);
+  const audioRef = useRef(null);
+
+
   const [width, setWidth] = useState(window.innerWidth);
   const [musicActive, setmusicActive] = useState(false)
+
+
   const handleActivateMusic = () => {
     setmusicActive(!musicActive)
+    const audioElement = audioRef.current;
+
+    if (audioElement.paused) {
+      audioElement.play();
+    } else {
+      audioElement.pause();
+    }
   }
   //UseEffect para capturar el ancho
   useEffect(() => {
@@ -45,8 +57,17 @@ function App() {
             <Route path="/about" element={<About/>}/>
           </Routes>
           <ScrollToTop /> {/* Aquí colocamos el componente ScrollToTop que es para que el scroll quede en 0 cada vez que yo cambie de ruta */}
+
+          
           <a className="fixed w-[65px] h-[65px] z-[9] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></a>
-          <a onClick={handleActivateMusic} className="fixed w-[50px] text-white h-[50px] z-[9] top-24 right-2 bg-morado rounded-full p-2 flex items-center justify-center border-2 border-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="2x" icon={musicActive ? faPlay : faPause}/></a>
+          <div onClick={handleActivateMusic} className="fixed w-[50px] text-white h-[50px] z-[9] top-24 right-2 bg-morado rounded-full p-2 flex items-center justify-center border-2 border-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="2x" icon={musicActive ? faPlay : faPause}/>
+          </div>
+          <div  className="absolute inset-0 opacity-0 w-full h-full" >
+            <audio ref={audioRef} controls={false}>
+            <source src="./audio/Song.mp3" type="audio/mpeg" />
+            Tu navegador no soporta la reproducción de audio.
+          </audio>
+          </div>
           <Contact />
         </div>
       </div>
