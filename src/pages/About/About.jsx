@@ -184,7 +184,7 @@ const About = () => {
         </div>
         <div className='absolute miniTablet:translate-x-[-200px] miniTablet:w-[800px] first:w-[600px] 
         first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px] 
-        scale-x-[-1] hidden first:block miniMobile:translate-x-[-280px]' ref={containerAnimation2}></div>
+        scale-x-[-1] hidden first:block miniMobile:translate-x-[-280px] recortar' ref={containerAnimation2}></div>
         </div>
         </section>
     </motion.div>   
