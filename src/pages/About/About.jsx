@@ -8,7 +8,6 @@ import {faDownload } from '@fortawesome/free-solid-svg-icons';
 import TransitionEffect from '../../components/transition/TransitionEffect';
 import among from "../../assets/among.json"
 import Cards from '../../components/Cards/Cards';
-import Atropos from 'atropos/react';
 
 const About = () => {
 

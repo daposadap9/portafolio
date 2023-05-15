@@ -102,7 +102,7 @@ const Contact = () => {
                 
               </div>
               <div className="inputBox flex flex-col m-2 relative w-full">
-              <button className="text-white boton buttonAnimated w-20 mx-auto"><a href="#contact">send</a></button>
+              <button className="text-white border-white border-2 rounded-md boton buttonAnimated w-28 mx-auto">send</button>
             </div>
             </form>
             
