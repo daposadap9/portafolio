@@ -19,7 +19,7 @@ const Cards = ({url, title, text, children}) => {
                 <h3 className='absolute h-[200px] top-0 bg-morado'>{text}</h3>
             </div>
             
-            <div className='flex justify-around relative'>
+            <div className='flex justify-end gap-16 relative'>
                 {children}                
             </div>
             </div>
