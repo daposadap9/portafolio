@@ -115,7 +115,7 @@ const About = () => {
     >About me</h1></b>
     <section className="pt-10 flex justify-center">
         <button className="text-gray px-4 py-2 border-2 border-grayOscuro text-xl rounded-md absolute bg-violet hover:bg-gray60 
-        hover:text-white z-[9]" id="myButton"><a href="/document/MyCV.pdf" target='_blank' downloand>Download my resume<FontAwesomeIcon className='ml-3 stroke' icon={faDownload} color='#000'/></a> 
+        hover:text-white z-[9]" id="myButton"><a href="/document/MyCV.pdf" target='_blank' downloand>Download my cv<FontAwesomeIcon className='ml-3 stroke' icon={faDownload} color='#000'/></a> 
         </button>
       </section>
     <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5

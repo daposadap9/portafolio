@@ -149,49 +149,49 @@ const Projects = () => {
         <div className='flex flex-col gap-2'>
         <Cards
         title={"Pokedex"}
-        text={"Project made at Academlo"}
+        text={"This project was built using React Router Doom and Redux to store the session in local storage. It also utilized several useState and useEffect hooks. Axios was used to consume the Pokémon API, and the different views were structured accordingly. The array.map function was used to render the list of Pokémon, and pagination logic was implemented extensively. Of course, the useDispatch function was also used."}
         url={"/images/projects/pokedex.png"}>
         <a href="https://github.com/daposadap9/entregable-5-pokedex" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://entregable5-pokedex.netlify.app/" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Portafolio"}
-        text={"Project made at Academlo"}
+        text={"This project was designed using pure flex, HTML, CSS, and media queries with max-width, meaning that it was initially designed for desktop and then adjusted for mobile devices."}
         url={"/images/projects/portafolio.png"}>
         <a href="https://github.com/daposadap9/portafolio-actualizado" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://lustrous-elf-02bf6e.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"App Ricky Morty"}
-        text={"Project made at Academlo"}
+        text={"In this project, an API from Ricky and Morty was consumed using Axios. The array.map method was used to render multiple characters. It's worth mentioning that the page initially displays a random dimension out of the 100+ available. Math.random was used for this purpose. Additionally, an uncontrolled input was implemented in the project."}
         url={"/images/projects/rickyMorty.png"}>
         <a href="https://github.com/daposadap9/entregable-3.00" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://lucent-cassata-25a151.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"App Ecommerce"}
-        text={"Project made at Academlo"}
+        text={"This project was designed using pure flex, grid, HTML, CSS, JavaScript, and media queries with min-width. It means that the project was initially designed for mobile devices and then adjusted for desktop screens. The project is an e-commerce website for gym equipment."}
         url={"/images/projects/carritoDeCompras.png"}>
         <a href="https://github.com/SalvadorAguila13/Ecommerce-1" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://stalwart-melba-d7b3d9.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Infogalax"}
-        text={"Project made at Academlo"}
+        text={"This project is called Infogalax, and Tailwind CSS was used, just like in other previous projects. The Math.random function was used in the project. The information was retrieved from a JSON file, and, of course, the useState hooks were used to manage the application state."}
         url={"/images/projects/infogalax.png"}>
         <a href="https://github.com/daposadap9/entregable-1-generacion24" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://charming-biscochitos-54b730.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Crud Users"}
-        text={"Project made at Academlo"}
+        text={"In this project, we used the CRUD methods which include create, read, update, and delete. We made several requests using Axios and interacted with multiple endpoints. We implemented required fields to ensure that the backend wouldn't receive empty values. Additionally, we added regular expressions to validate all the fields."}
         url={"/images/projects/crudUsers.png"}>
         <a href="https://github.com/daposadap9/entregable-4" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://entregable-4-academlo.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Weather app"}
-        text={"Project made at Academlo"}
+        text={"In this project, we made our first API consumption using Axios. We utilized a weather API, where the app prompts you to provide your location and retrieves the weather data, including temperature and other relevant information, for your current location."}
         url={"/images/projects/appClima.png"}>
         <a href="https://github.com/daposadap9/entregable-2-clima" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://tranquil-naiad-917af2.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
