@@ -150,11 +150,11 @@ const About = () => {
         challenges and learn from them. I hope to contribute my skills and experience in the technology field.
         </p>
         </section>
-        <h1 className='text-center text-2xl font-bold text-white'>Mi experience</h1>
+        <h1 className='text-center text-2xl font-bold text-white translate-y-[48px]'>Mi experience</h1>
         <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
         <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
-        <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-2 pt-8'>
         <Cards
         title={"Apprentice in Emtelco - Duration 6 months"}
         text={"During this internship experience, I learned how to use NPM installations and, for the first time, I gained knowledge in frameworks such as Ionic and Vue. Additionally, I successfully made my first REST API consumption"}
@@ -166,9 +166,9 @@ const About = () => {
         url={"/images/projects/portafolio.png"}>
         </Cards>
         <Cards
-        title={"Mi experiencia"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
-        url={"/images/projects/portafolio.png"}>
+        title={"Freelance web developer in Ememca - Duration 6 months"}
+        text={"In this role, I am developing a website using React, Express, MongoDB, and Node.js. All of this is being uploaded to the Cloudinary and AWS cloud platforms. It is a platform-type website."}
+        url={"/images/about/ememca.png"}>
         </Cards>
         </div>
         <div className='absolute miniTablet:translate-x-[-200px] miniTablet:w-[800px] first:w-[600px] 

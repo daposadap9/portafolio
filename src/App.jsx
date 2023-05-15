@@ -75,8 +75,6 @@ function App() {
             Tu navegador no soporta la reproducción de audio.
           </audio>
           </div>
-
-
           <Contact />
         </div>
       </div>
