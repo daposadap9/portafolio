@@ -4,7 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import { motion } from "framer-motion";
 import Animation from '../../components/Animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faArrowCircleRight, faDownload } from '@fortawesome/free-solid-svg-icons';
+import {faDownload } from '@fortawesome/free-solid-svg-icons';
 import TransitionEffect from '../../components/transition/TransitionEffect';
 import among from "../../assets/among.json"
 import Cards from '../../components/Cards/Cards';
@@ -14,10 +14,8 @@ const About = () => {
     //animaciones
     const containerAnimation = useRef(null);
     const containerAnimation2 = useRef(null);
-    const containerAnimation3 = useRef(null);
     //animaciones
     const contenedorPadreAnimation2 = useRef(null);
-    const contenedorPadreAnimation3 = useRef(null);
 
     const [isFixed, setIsFixed] = useState(false);
 
@@ -38,17 +36,9 @@ const About = () => {
           autoplay: true,
           animationData: among,
         });
-        const anim3 = lottie.loadAnimation({
-          container: containerAnimation3.current,
-          render: "svg",
-          loop: true,
-          autoplay: true,
-          animationData: among,
-        });
         return () => {
           anim.destroy();
           anim2.destroy();
-          anim3.destroy();
         };
       }, []);
     //animacion
@@ -165,7 +155,7 @@ const About = () => {
         <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
         <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
-        <div className='flex flex-col gap-2 pt-8'>
+        <div data-aos="fade-up" data-aos-once="true" className='flex flex-col gap-2 pt-8'>
         <Cards
         title={"Apprentice in Emtelco - Duration 6 months"}
         text={"During this internship experience, I learned how to use NPM installations and, for the first time, I gained knowledge in frameworks such as Ionic and Vue. Additionally, I successfully made my first REST API consumption"}

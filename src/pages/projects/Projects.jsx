@@ -10,6 +10,7 @@ import among from "../../assets/among.json"
 import lottie from "lottie-web";
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
+
 const Projects = () => {
 
   //animaciones
@@ -144,10 +145,10 @@ const Projects = () => {
         </p>
         </section>
 
-        <section ref={contenedorPadreAnimation2} id='projects'  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
-        <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
+        <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
+        <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
-        <div className='flex flex-col gap-2'>
+        <div data-aos="fade-up" data-aos-once="true" className='flex flex-col gap-2'>
         <Cards
         title={"Pokedex"}
         text={"This project was built using React Router Doom and Redux to store the session in local storage. It also utilized several useState and useEffect hooks. Axios was used to consume the Pokémon API, and the different views were structured accordingly. The array.map function was used to render the list of Pokémon, and pagination logic was implemented extensively. Of course, the useDispatch function was also used."}

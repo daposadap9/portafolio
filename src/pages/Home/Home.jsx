@@ -225,7 +225,7 @@ function Home() {
           </p>
         </div>
       </section>
-      <section className="text-white m-5">
+      <section data-aos="fade-right" data-aos-once="true" className="text-white m-5">
         <div className="m-4"><b><h1 className="text-violet text-2xl mt-4 mb-4">Development<span className="text-white"> of custom websites,  web applications, and mobile applications with Ionic.</span></h1></b>
           <p>My approach is customer-centric, and I am committed to providing you with an exceptional experience. I will work closely with you, listening to your ideas and requirements, to ensure that the final outcome reflects your vision and meets your needs.
             Whether you need an elegant mobile application, a comprehensive web platform, or improvements to your existing software, I am here to assist you. Together, we can take your project to the next level and achieve success.</p></div>
@@ -234,7 +234,7 @@ function Home() {
           <img className="absolute top-5  midMobile:top-9 w-3/5" src="/images/cell.png" alt="" />
         </div>
       </section>
-      <section className="text-white m-5">
+      <section data-aos="fade-left" data-aos-once="true" className="text-white m-5">
         <div className="m-4"><b><h1 className="text-violet text-2xl mt-4 mb-4">Build<span className="text-white"> a whole new world</span></h1></b>
           <p>I always stay at the forefront of new technologies and constantly seek to improve my professional skills. I am committed to staying updated 
             on the latest advancements in the field of software development and I am always willing to acquire new knowledge and skills to deliver innovative and high-quality solutions to my clients. 
