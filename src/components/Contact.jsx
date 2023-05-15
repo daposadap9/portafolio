@@ -5,6 +5,7 @@ import instagram from "../assets/instagram.json"
 import linkedin from "../assets/linkedin.json"
 import facebook from "../assets/facebook.json"
 import lottie from "lottie-web";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
     const containerAnimation6 = useRef(null);
@@ -13,8 +14,13 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
     e.preventDefault()
+    emailjs.sendForm("service_cc7aguk", "template_3700anm", e.target, "uWFQ2e9a5bwLUYTGU")
+    .then((res)=>console.log(res.text))
+    .catch((error) => console.log(error))
     }
 
+
+    //animaciones
     useEffect(() => {
         const anim6 = lottie.loadAnimation({
           container: containerAnimation6.current,
@@ -43,6 +49,9 @@ const Contact = () => {
           anim8.destroy();
         };
       }, []);
+
+    //animaciones
+
   return (
     <div className="
       pb-10
@@ -67,7 +76,7 @@ const Contact = () => {
         "
           >
             <b><h1 className="text-center pt-6 text-violet text-2xl mb-4 overflow-hidden">Contact me</h1></b>
-            <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black items-center
+          <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black items-center
           miniTablet:flex-row
           miniTablet:flex-wrap
           midTablet:flex-row
@@ -77,26 +86,26 @@ const Contact = () => {
           ">
               <div className="flex flex-col relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet"
-                  placeholder="Write your name here" type="text" id="firstName" required/>
+                  placeholder="Write your name here" type="text" id="firstName" name='from_name' required/>
                 <label htmlFor="firstName" className="absolute left-0 px-0 py-1 duration-0.3">First name</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
-                  placeholder="Write your last name here" id="lastName" required/>
+                  placeholder="Write your last name here" id="lastName" name='last_name' required/>
                 <label htmlFor="lastName" className="absolute left-0 px-0 py-1 transition duration-0.3">Last name</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
-                  placeholder="Write your email here" id="email" required/>
+                  placeholder="Write your email here" id="email" name='email' required/>
                 <label htmlFor="email" className="absolute left-0 px-0 py-1 transition duration-0.3">Email address</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
-                  placeholder="Cellphone number" id="cellPhone" required/>
+                  placeholder="Cellphone number" id="cellPhone" name='cellphone' required/>
                 <label htmlFor="cellPhone" className="absolute left-0 px-0 py-1 transition duration-0.3">Cellphone number</label>
               </div>
               <div className="inputBox flex flex-col m-2 w-72 midTablet:mt-10">
-              <label htmlFor="message" className="flex w-50% mx-20 px-0" id="message">Message</label>
+              <label htmlFor="message" className="flex w-50% mx-20 px-0" name="message" id="message">Message</label>
                 <textarea className="outline-none border-b mt-3 bg-transparent focus:text-violet w-2/4 mx-auto text-center"
                   placeholder="Write your message here..." id="message" required></textarea>
                 
