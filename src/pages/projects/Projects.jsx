@@ -149,49 +149,49 @@ const Projects = () => {
         <div className='flex flex-col gap-2'>
         <Cards
         title={"Pokedex"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        text={"Project made at Academlo"}
         url={"/images/projects/pokedex.png"}>
         <a href="https://github.com/daposadap9/entregable-5-pokedex" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://entregable5-pokedex.netlify.app/" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Portafolio"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        text={"Project made at Academlo"}
         url={"/images/projects/portafolio.png"}>
         <a href="https://github.com/daposadap9/portafolio-actualizado" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://lustrous-elf-02bf6e.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"App Ricky Morty"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        text={"Project made at Academlo"}
         url={"/images/projects/rickyMorty.png"}>
         <a href="https://github.com/daposadap9/entregable-3.00" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://lucent-cassata-25a151.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"App Ecommerce"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        text={"Project made at Academlo"}
         url={"/images/projects/carritoDeCompras.png"}>
         <a href="https://github.com/SalvadorAguila13/Ecommerce-1" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://stalwart-melba-d7b3d9.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Infogalax"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        text={"Project made at Academlo"}
         url={"/images/projects/infogalax.png"}>
         <a href="https://github.com/daposadap9/entregable-1-generacion24" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://charming-biscochitos-54b730.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Crud Users"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        text={"Project made at Academlo"}
         url={"/images/projects/crudUsers.png"}>
         <a href="https://github.com/daposadap9/entregable-4" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://entregable-4-academlo.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
         </Cards>
         <Cards
         title={"Weather app"}
-        text={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, nemo."}
+        text={"Project made at Academlo"}
         url={"/images/projects/appClima.png"}>
         <a href="https://github.com/daposadap9/entregable-2-clima" target='_blank' className='z-[9]'><FontAwesomeIcon size='2x' icon={faGithub}/></a>
         <a href="https://tranquil-naiad-917af2.netlify.app/" target='_blank'className='z-[9]'><FontAwesomeIcon size='2x' icon={faArrowCircleRight}/></a>
