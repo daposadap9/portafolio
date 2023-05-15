@@ -56,8 +56,8 @@ const Contact = () => {
       midTablet:left-0 p-5
       midTablet:bg-circle-gradient
       tv:px-[300px] midtv:px-[800px] midtv:w-screen
-      ">
-        <section id="contact" className="desktop:w-3/5 midDesktop:w-5/12">
+      " id='contact'>
+        <section className="desktop:w-3/5 midDesktop:w-5/12">
           <div className="rounded-2xl bg-circle-gradient text-white overflow-hidden
         midTablet:bg-circle-gradient2
         midTablet:translate-x-[-30px]

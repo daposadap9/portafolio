@@ -102,7 +102,7 @@ const Projects = () => {
     >My Projects</h1></b>
     <section className="pt-10 flex justify-center">
         <button className="text-gray px-4 py-2 border-2 border-grayOscuro text-xl rounded-md absolute bg-violet hover:bg-gray60 
-        hover:text-white z-[9]" id="myButton">View my projects<FontAwesomeIcon className='ml-3 stroke' icon={faArrowCircleRight} color='#000'/>
+        hover:text-white z-[9]" id="myButton"><a href="#projects">View my projects<FontAwesomeIcon className='ml-3 stroke' icon={faArrowCircleRight} color='#000'/></a> 
         </button>
       </section>
     <div className='mt-6 mb-6 tablet:mb-2'>
@@ -143,7 +143,7 @@ const Projects = () => {
         </p>
         </section>
 
-        <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
+        <section ref={contenedorPadreAnimation2} id='projects'  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
         <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
         <div className='flex flex-col gap-2'>
