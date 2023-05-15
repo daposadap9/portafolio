@@ -150,9 +150,8 @@ const About = () => {
         challenges and learn from them. I hope to contribute my skills and experience in the technology field.
         </p>
         </section>
-
+        <h1 className='text-center text-2xl font-bold text-white'>Mi experience</h1>
         <section ref={contenedorPadreAnimation2}  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
-          <h1 className='mt-6 text-center text-2xl font-bold'>Mi experience</h1>
         <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
         miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
         <div className='flex flex-col gap-2'>
