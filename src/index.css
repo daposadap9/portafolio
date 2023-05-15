@@ -150,3 +150,6 @@ html {
 .recortar{
   clip-path: inset(10px 20px 30px 240px)
 }
+*{
+  scroll-behavior: smooth;
+}
