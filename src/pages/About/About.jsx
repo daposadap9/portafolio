@@ -4,7 +4,7 @@ import Banner from '../../components/Banner/Banner'
 import { motion } from "framer-motion";
 import Animation from '../../components/Animation';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
+import {faArrowCircleRight, faDownload } from '@fortawesome/free-solid-svg-icons';
 import TransitionEffect from '../../components/transition/TransitionEffect';
 import among from "../../assets/among.json"
 import Cards from '../../components/Cards/Cards';
@@ -14,8 +14,11 @@ const About = () => {
     //animaciones
     const containerAnimation = useRef(null);
     const containerAnimation2 = useRef(null);
+    const containerAnimation3 = useRef(null);
     //animaciones
     const contenedorPadreAnimation2 = useRef(null);
+    const contenedorPadreAnimation3 = useRef(null);
+
     const [isFixed, setIsFixed] = useState(false);
 
 
@@ -35,9 +38,17 @@ const About = () => {
           autoplay: true,
           animationData: among,
         });
+        const anim3 = lottie.loadAnimation({
+          container: containerAnimation3.current,
+          render: "svg",
+          loop: true,
+          autoplay: true,
+          animationData: among,
+        });
         return () => {
           anim.destroy();
           anim2.destroy();
+          anim3.destroy();
         };
       }, []);
     //animacion
@@ -104,7 +115,7 @@ const About = () => {
     >About me</h1></b>
     <section className="pt-10 flex justify-center">
         <button className="text-gray px-4 py-2 border-2 border-grayOscuro text-xl rounded-md absolute bg-violet hover:bg-gray60 
-        hover:text-white z-[9]" id="myButton">Click me<FontAwesomeIcon className='ml-3 stroke' icon={faArrowCircleRight} color='#000'/>
+        hover:text-white z-[9]" id="myButton"><a href="/document/MyCV.pdf" target='_blank' downloand>Download my resume<FontAwesomeIcon className='ml-3 stroke' icon={faDownload} color='#000'/></a> 
         </button>
       </section>
     <div className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
@@ -174,32 +185,6 @@ const About = () => {
         <div className='absolute miniTablet:translate-x-[-200px] miniTablet:w-[800px] first:w-[600px] 
         first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px] 
         scale-x-[-1] hidden first:block miniMobile:translate-x-[-280px]' ref={containerAnimation2}></div>
-        </div>
-        </section>
-        <h1 className='text-center text-2xl font-bold text-white translate-y-[48px]'>My studies</h1>
-        <section  className='relative w-[600px] bg-circle-gradient4 h-full mb-20 rounded-md midMobile:px-10 midMobile:pb-10 text-white overflow-hidden'>
-        <div  className='relative flex flex-row first:mt-14 first:justify-between first:translate-x-16 miniTablet:w[-400px] midMobile:top-5
-        miniTablet:mt-6 miniTablet:justify-around miniTablet:translate-x-12 miniMobile:translate-x-10 tablet:translate-x-24'>
-        <div className='flex flex-col gap-2 pt-8'>
-        <Cards
-        title={"Apprentice in Emtelco - Duration 6 months"}
-        text={"During this internship experience, I learned how to use NPM installations and, for the first time, I gained knowledge in frameworks such as Ionic and Vue. Additionally, I successfully made my first REST API consumption"}
-        url={"/images/about/Emtelco.jpg"}>
-        </Cards>
-        <Cards
-        title={"Information Systems Assistant in Corbeta - Duration 1 year and 7 months"}
-        text={"Working as a support assistant at a car company, I provide functional-level support for an information system. I extensively analyze potential system improvements, gather requirements, escalate cases, analyze data, and generate reports. I have a strong proficiency in Excel, as I handle data analysis and process automation. Additionally, I conduct user training sessions to ensure effective system utilization."}
-        url={"/images/about/Colombiana.jpg"}>
-        </Cards>
-        <Cards
-        title={"Freelance web developer in Ememca - Duration 6 months"}
-        text={"In this role, I am developing a website using React, Express, MongoDB, and Node.js. All of this is being uploaded to the Cloudinary and AWS cloud platforms. It is a platform-type website."}
-        url={"/images/about/ememca.png"}>
-        </Cards>
-        </div>
-        <div className='absolute miniTablet:translate-x-[-200px] miniTablet:w-[800px] first:w-[600px] 
-        first:translate-x-[-320px] first:top-16 miniMobile:top-16 miniTablet:top-3 miniTablet:translate-y-[-10px] 
-        scale-x-[-1] hidden first:block miniMobile:translate-x-[-280px]'></div>
         </div>
         </section>
     </motion.div>   
