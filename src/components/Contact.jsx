@@ -19,10 +19,11 @@ const Contact = () => {
       import.meta.env.VITE_APP_TEMPLATE_ID, 
       e.target, 
       import.meta.env.VITE_APP_PUBLIC_KEY
-      
     )
-
-    .then((res)=>console.log(res.text))
+    .then((res)=>{
+      console.log(res.text)
+      e.target.reset()
+    })
     .catch((error) => console.log(error))
     }
     //animaciones
