@@ -56,12 +56,15 @@ function App() {
   //useEffect para redirigir a la ruta raiz cada vez que recarga la pagina
 
 
-
+//logica para audio
   const handleAudioEnded = () => {
     const audioElement = audioRef.current;
     audioElement.currentTime = 0; // Reinicia el tiempo de reproducción
     audioElement.play();
-  };
+//logica para audio
+
+
+  }
   
   return (
     <>

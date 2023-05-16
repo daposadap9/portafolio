@@ -14,12 +14,17 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
     e.preventDefault()
-    emailjs.sendForm(import.meta.env.VITE_APP_SERVICE_ID, import.meta.env.VITE_APP_TEMPLATE_ID, e.target, import.meta.env.VITE_APP_PUBLIC_KEY)
+    emailjs.sendForm(
+      import.meta.env.VITE_APP_SERVICE_ID, 
+      import.meta.env.VITE_APP_TEMPLATE_ID, 
+      e.target, 
+      import.meta.env.VITE_APP_PUBLIC_KEY
+      
+    )
+
     .then((res)=>console.log(res.text))
     .catch((error) => console.log(error))
     }
-
-
     //animaciones
     useEffect(() => {
         const anim6 = lottie.loadAnimation({
