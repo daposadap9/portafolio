@@ -187,10 +187,11 @@ function Home() {
         midMobile:p-14
         miniTablet:p-16
         tablet:p-4 tablet:mt-6
+        overflow-hidden
         "
         >
-          <div className="flex justify-center" ref={containerAnimation2}></div>
-          <p className="text-center mt-2">Experience the world through VR glases
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation2}></div>
+          <p className="text-center mt-2">I work with HTML.
           </p>
         </div>
         </Atropos>
@@ -203,8 +204,8 @@ function Home() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center" ref={containerAnimation3}></div>
-          <p className="text-center mt-2">Experience the world through VR glases
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation3}></div>
+          <p className="text-center mt-2">I work with CSS.
           </p>
         </div>
         </Atropos>
@@ -217,8 +218,8 @@ function Home() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center pt-5 pb-5" ref={containerAnimation4}></div>
-          <p className="text-center mt-2">Experience the world through VR glases
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation4}></div>
+          <p className="text-center mt-2">I work with Javascript.
           </p>
         </div>
         </Atropos>
@@ -231,8 +232,73 @@ function Home() {
         tablet:p-4 tablet:mt-6
         "
         >
-          <div className="flex justify-center pt-5 pb-5" ref={containerAnimation5}></div>
-          <p className="text-center mt-2">Experience the world through VR glases
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation5}></div>
+          <p className="text-center mt-2">I work with React.
+          </p>
+        </div>
+        </Atropos>
+      </section>
+      <section className="mt-6 rounded-xl w-5/6 flex flex-col m-auto p-3 bg-[#3a2f634f] shadow-2xl
+      miniMobile:p-4
+      mobile:p-6
+      midMobile:p-8
+      miniTablet:p-9 miniTablet:w-8/12
+      tablet:pt-3 tablet:flex-row tablet:gap-6 tablet:w-full
+      " id="Cards" >
+        <Atropos>
+        <div className="text-gray mt-3 bg-carton
+        p-6 rounded-xl
+        mobile:p-10
+        midMobile:p-14
+        miniTablet:p-16
+        tablet:p-4 tablet:mt-6
+        overflow-hidden
+        "
+        >
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation2}></div>
+          <p className="text-center mt-2">I work with HTML.
+          </p>
+        </div>
+        </Atropos>
+        <Atropos>
+        <div className="text-gray mt-3 bg-carton
+        p-6 rounded-xl
+        mobile:p-10
+        midMobile:p-14
+        miniTablet:p-16
+        tablet:p-4 tablet:mt-6
+        "
+        >
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation3}></div>
+          <p className="text-center mt-2">I work with CSS.
+          </p>
+        </div>
+        </Atropos>
+        <Atropos>
+        <div className="text-gray mt-3 bg-carton
+        p-6 rounded-xl
+        mobile:p-10
+        midMobile:p-14
+        miniTablet:p-16
+        tablet:p-4 tablet:mt-6
+        "
+        >
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation4}></div>
+          <p className="text-center mt-2">I work with Javascript.
+          </p>
+        </div>
+        </Atropos>
+        <Atropos>
+        <div className="text-gray mt-3 bg-carton
+        p-6 rounded-xl
+        mobile:p-10
+        midMobile:p-14
+        miniTablet:p-16
+        tablet:p-4 tablet:mt-6
+        "
+        >
+          <div className="flex justify-center h-40 w-20 m-auto" ref={containerAnimation5}></div>
+          <p className="text-center mt-2">I work with React.
           </p>
         </div>
         </Atropos>
