@@ -82,7 +82,7 @@ const Contact = () => {
         "
           >
             <b><h1 className="text-center pt-6 text-violet text-2xl mb-4 overflow-hidden">Contact me</h1></b>
-          <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-black items-center
+          <form onSubmit={handleSubmit} className="inputBox flex flex-col justify-center gap-2 p-3 text-white items-center
           miniTablet:flex-row
           miniTablet:flex-wrap
           midTablet:flex-row
@@ -93,25 +93,25 @@ const Contact = () => {
               <div className="flex flex-col relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet"
                   placeholder="Write your name here" type="text" id="firstName" name='from_name' required/>
-                <label htmlFor="firstName" className="absolute left-0 px-0 py-1 duration-0.3">First name</label>
+                <label htmlFor="firstName" className="absolute left-0 px-0 py-1 text-white duration-0.3">First name</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
                   placeholder="Write your last name here" id="lastName" name='last_name' required/>
-                <label htmlFor="lastName" className="absolute left-0 px-0 py-1 transition duration-0.3">Last name</label>
+                <label htmlFor="lastName" className="absolute left-0 px-0 py-1 text-white transition duration-0.3">Last name</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
                   placeholder="Write your email here" id="email" name='email' required/>
-                <label htmlFor="email" className="absolute left-0 px-0 py-1 transition duration-0.3">Email address</label>
+                <label htmlFor="email" className="absolute left-0 px-0 py-1 text-white transition duration-0.3">Email address</label>
               </div>
               <div className="inputBox flex flex-col m-2 relative">
                 <input className="outline-none mt-8 border-b bg-transparent h-14 focus:text-violet" type="text"
                   placeholder="Cellphone number" id="cellPhone" name='cellphone' required/>
-                <label htmlFor="cellPhone" className="absolute left-0 px-0 py-1 transition duration-0.3">Cellphone number</label>
+                <label htmlFor="cellPhone" className="absolute left-0 px-0 py-1 text-white transition duration-0.3">Cellphone number</label>
               </div>
               <div className="inputBox flex flex-col m-2 w-72 midTablet:mt-10">
-              <label htmlFor="message" className="flex w-50% mx-20 px-0" name="message" id="message">Message</label>
+              <label htmlFor="message" className="flex w-50% mx-20 px-0 text-white" name="message" id="message">Message</label>
                 <textarea className="outline-none border-b mt-3 bg-transparent focus:text-violet w-2/4 mx-auto text-center"
                   placeholder="Write your message here..." id="message" required></textarea>
                 
