@@ -20,7 +20,7 @@ const HeaderComplete = ({width}) => {
      initial={{opacity:0}}
      animate={{opacity:1}}
      transition={{ duration: 1}}
-     className="top-0 z-50 fixed">
+     className="top-0 z-50 fixed w-full">
         {width >= 734 ? (
           <Header />
         ) : (
