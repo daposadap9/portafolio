@@ -12,6 +12,7 @@ import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import ScrollToTop from "./components/ScrollToTop";
 import { useNavigate } from 'react-router-dom';
 import Party from "./components/party/Party";
+import ModalComent from "./components/modalComent/ModalComent";
 
 
 function App() {
@@ -24,13 +25,20 @@ function App() {
   const [width, setWidth] = useState(window.innerWidth);
   const [musicActive, setmusicActive] = useState(false)
   const [activateBackground, setactivateBackground] = useState(false)
+  const [activateModalMusic, setactivateModalMusic] = useState(false)
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * numbers.length);
     const number = numbers[randomIndex];
     setRandomNum(number);
-    console.log(randomNum)
   }, []);
+
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setactivateModalMusic(!activateModalMusic)
+    }, 3000);
+  },[])
 
   const history = useNavigate();
 
@@ -110,6 +118,7 @@ function App() {
           </div>
           <Contact />
           {activateBackground? <Party/>:""}
+          {activateModalMusic? <ModalComent activateModalMusic={activateModalMusic} setactivateModalMusic={setactivateModalMusic}/> : ""}
         </div>
       </div>
     </>
