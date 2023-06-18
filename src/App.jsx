@@ -99,7 +99,7 @@ function App() {
             <audio ref={audioRef}
             controls={false}
             onEnded={handleAudioEnded}>
-            <source src={randomNum == 1? './audio/song1.mp3': randomNum == 2? './audio/song2.mp3': './audio/song3.mp3'} type="audio/mpeg" />
+            <source src={randomNum == 1? './audio/song1.mp3': randomNum == 2? './audio/song2.mp3': randomNum == 3? './audio/song3.mp3' : './audio/song1.mp3'} type="audio/mpeg" />
             Tu navegador no soporta la reproducción de audio.
           </audio>
           </div>
