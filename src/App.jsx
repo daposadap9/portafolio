@@ -98,11 +98,14 @@ function App() {
       <div className="content">
         <div className="App" ref={containerWidth}>
           <HeaderComplete width={width}/>
-          <Routes>
+          <div className="relative mt-[55px]">
+            <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/about" element={<About/>}/>
           </Routes>
+          </div>
+          
           <ScrollToTop /> {/* Aquí colocamos el componente ScrollToTop que es para que el scroll quede en 0 cada vez que yo cambie de ruta */}
 
           <a href="https://api.whatsapp.com/send?phone=+573207689885&amp;text=Hola%20Diego%20como%20estas?" target="_blank" rel="noreferrer" className="fixed w-[65px] z-10 h-[65px] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></a>
