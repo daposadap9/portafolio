@@ -7,7 +7,7 @@ const Party = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentColorIndex((prevIndex) => (prevIndex + 1) % colors.length);
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(interval);
   }, []);
