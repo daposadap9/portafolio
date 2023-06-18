@@ -17,10 +17,17 @@ function App() {
   //refencia ancho
   const containerWidth = useRef(null);
   const audioRef = useRef(null);
-
+  const numbers = [1, 2, 3];
+  const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * numbers.length));
 
   const [width, setWidth] = useState(window.innerWidth);
   const [musicActive, setmusicActive] = useState(false)
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * numbers.length);
+    const number = numbers[randomIndex];
+    setRandomNum(number);
+  }, []);
 
   const history = useNavigate();
 
@@ -92,7 +99,7 @@ function App() {
             <audio ref={audioRef}
             controls={false}
             onEnded={handleAudioEnded}>
-            <source src="./audio/song3.mp3" type="audio/mpeg" />
+            <source src={randomNum == 1? './audio/song1.mp3': randomNum == 2? './audio/song2.mp3': './audio/song3.mp3'} type="audio/mpeg" />
             Tu navegador no soporta la reproducción de audio.
           </audio>
           </div>
