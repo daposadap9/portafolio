@@ -18,8 +18,8 @@ function App() {
   //refencia ancho
   const containerWidth = useRef(null);
   const audioRef = useRef(null);
-  const numbers = [1, 2, 3];
-  const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * numbers.length));
+  const numbers = [1, 2, 3, 4];
+  const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * numbers.length + 1));
 
   const [width, setWidth] = useState(window.innerWidth);
   const [musicActive, setmusicActive] = useState(false)
@@ -29,6 +29,7 @@ function App() {
     const randomIndex = Math.floor(Math.random() * numbers.length);
     const number = numbers[randomIndex];
     setRandomNum(number);
+    console.log(randomNum)
   }, []);
 
   const history = useNavigate();
@@ -79,6 +80,8 @@ function App() {
     audioElement.currentTime = 0; // Reinicia el tiempo de reproducción
     audioElement.play();
 //logica para audio
+
+
 };
   
   return (
