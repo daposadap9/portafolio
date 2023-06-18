@@ -55,6 +55,14 @@ function App() {
   }, []);
   //useEffect para redirigir a la ruta raiz cada vez que recarga la pagina
 
+  //useEffect para tener por defecto el audio en 50%
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.5; // Establecer el volumen al 50% al cargar el componente
+    }
+  }, []);
+//useEffect para tener por defecto el audio en 50%
+
 
 //logica para audio
   const handleAudioEnded = () => {
@@ -62,9 +70,7 @@ function App() {
     audioElement.currentTime = 0; // Reinicia el tiempo de reproducción
     audioElement.play();
 //logica para audio
-
-
-  }
+};
   
   return (
     <>
@@ -86,7 +92,7 @@ function App() {
             <audio ref={audioRef}
             controls={false}
             onEnded={handleAudioEnded}>
-            <source src="./audio/Song.mp3" type="audio/mpeg" />
+            <source src="./audio/song3.mp3" type="audio/mpeg" />
             Tu navegador no soporta la reproducción de audio.
           </audio>
           </div>
