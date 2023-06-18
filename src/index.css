@@ -153,3 +153,12 @@ html {
 *{
   scroll-behavior: smooth;
 }
+button{
+  z-index: 2;
+}
+a{
+  z-index: 2;
+}
+Link{
+  z-index: 2;
+}

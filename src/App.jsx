@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPause, faPlay } from "@fortawesome/free-solid-svg-icons";
 import ScrollToTop from "./components/ScrollToTop";
 import { useNavigate } from 'react-router-dom';
+import Party from "./components/party/Party";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 
   const [width, setWidth] = useState(window.innerWidth);
   const [musicActive, setmusicActive] = useState(false)
+  const [activateBackground, setactivateBackground] = useState(false)
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * numbers.length);
@@ -34,8 +36,8 @@ function App() {
 
   const handleActivateMusic = () => {
     setmusicActive(!musicActive)
+    setactivateBackground(!activateBackground)
     const audioElement = audioRef.current;
-
     if (audioElement.paused) {
       audioElement.play();
     } else {
@@ -92,8 +94,8 @@ function App() {
           </Routes>
           <ScrollToTop /> {/* Aquí colocamos el componente ScrollToTop que es para que el scroll quede en 0 cada vez que yo cambie de ruta */}
 
-          <a href="https://api.whatsapp.com/send?phone=+573207689885&amp;text=Hola%20Diego%20como%20estas?" target="_blank" rel="noreferrer" className="fixed w-[65px] h-[65px] z-[9] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></a>
-          <div onClick={handleActivateMusic} className="fixed w-[50px] text-white h-[50px] z-[9] top-24 right-2 bg-morado rounded-full p-2 flex items-center justify-center border-2 border-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="2x" icon={musicActive ? faPause: faPlay }/>
+          <a href="https://api.whatsapp.com/send?phone=+573207689885&amp;text=Hola%20Diego%20como%20estas?" target="_blank" rel="noreferrer" className="fixed w-[65px] z-10 h-[65px] bottom-2 right-2 bg-[#05aa08] rounded-full p-2 flex items-center justify-center border-2 border-white text-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="3x" icon={faWhatsapp}/></a>
+          <div onClick={handleActivateMusic} className="fixed w-[50px] text-white h-[50px] z-[10] top-24 right-2 bg-morado rounded-full p-2 flex items-center justify-center border-2 border-white hover:opacity-90 cursor-pointer overflow-hidden"><FontAwesomeIcon size="2x" icon={musicActive ? faPause: faPlay }/>
           </div>
           <div  className="absolute top-0 opacity-0 w-full" >
             <audio ref={audioRef}
@@ -104,7 +106,7 @@ function App() {
           </audio>
           </div>
           <Contact />
-          
+          {activateBackground? <Party/>:""}
         </div>
       </div>
     </>
